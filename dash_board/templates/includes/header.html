@@ -1,0 +1,206 @@
+{% load static %}
+
+{#  <header class=" u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-header u-section-row-container" id="sec-8da3" style="background-image: none"><div class="u-section-rows">#}
+{#        <div class="u-clearfix u-section-row u-sticky u-white u-section-row-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-4175">#}
+{#          <div class="u-clearfix u-sheet u-sheet-1">#}
+{#            <a href="https://digital.gov.ru/ru/" class="u-image u-logo u-image-1" data-image-width="1923" data-image-height="575">#}
+{#              <img src="{% static 'img/83de25a3-ca82-456d-bf31-4dbc46dc7be0.jpeg' %}" class="u-logo-image u-logo-image-1">#}
+{#            </a>#}
+{#              <a href="https://www.niir.ru/ob-institute/struktura-3/seti-dostupa/">#}
+{#            <img class="u-image u-image-contain u-image-default u-image-2" src="{% static 'img/07fbe760-717a-4e7e-91a1-bd1a3481120f.jpeg' %}" alt="" data-image-width="749" data-image-height="551">#}
+{#              </a>#}
+{#                  <nav class="u-align-center u-menu u-menu-one-level u-offcanvas u-menu-1">#}
+{#              <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 0.875rem; letter-spacing: 0px;">#}
+{#                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">#}
+{#                  <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>#}
+{#                  <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>#}
+{#</g></svg>#}
+{#                </a>#}
+{#              </div>#}
+{#                <div class="u-custom-menu u-nav-container">#}
+{#                    <ul class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-1">#}
+{#                        <li class="u-nav-item">#}
+{#                            <font style="vertical-align: inherit;">{{ user.get_full_name }}</font>#}
+{##}
+{##}
+{#                </li>#}
+{#                    <li class="u-nav-item"><a#}
+{#                            class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-custom-color-4 u-text-hover-custom-color-12"#}
+{#                            style="padding: 10px 22px;" href="{% url 'users:logout' %}"> Выход#}
+{##}
+{#                    </a>#}
+{#                    </li>#}
+{#                </ul>#}
+{#              </div>#}
+{#              <div class="u-custom-menu u-nav-container-collapse">#}
+{#                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">#}
+{#                  <div class="u-inner-container-layout u-sidenav-overflow">#}
+{#                    <div class="u-menu-close"></div>#}
+{#                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Сергей Кусев</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</a>#}
+{#</li><li class="u-nav-item"><a class="u-button-style u-nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Выход</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</font>#}
+{#</a>#}
+{#</li></ul>#}
+{#                  </div>#}
+{#                </div>#}
+{#                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>#}
+{#              </div>#}
+{#            </nav>#}
+{#          </div>#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#        </div>#}
+{#  #}
+{#{% if perms.users.new_func %}#}
+{#        <div class="u-custom-color-4 u-section-row u-sticky-f327 u-section-row-2" id="sec-cd11">#}
+{#          <div class="u-clearfix u-sheet u-sheet-2">#}
+{#            <nav class="u-align-center u-menu u-menu-one-level u-offcanvas u-menu-2" data-position="menuuuu">#}
+{#              <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 0.875rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 600;">#}
+{#                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">#}
+{#                  <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2fc4"></use></svg>#}
+{#                  <svg class="u-svg-content" version="1.1" id="svg-2fc4" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>#}
+{#</g></svg>#}
+{#                </a>#}
+{#              </div>#}
+{#              <div class="u-custom-menu u-nav-container">#}
+{#                <ul class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-3">#}
+{#                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-12 u-text-white" href="{% url 'board:index' %}" style="padding: 10px 22px;">Главная</a></li>#}
+{#                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-12 u-text-white" href="{% url 'board:analytics' %}" style="padding: 10px 22px;">Аналитика</a></li>#}
+{#                    {% if perms.users.archive %}#}
+{#                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-12 u-text-white" href="{% url 'board:analytics' %}" style="padding: 10px 22px;">Архив</a></li>#}
+{#                    {% endif %}#}
+{#                </ul>#}
+{#              </div>#}
+{#              <div class="u-custom-menu u-nav-container-collapse">#}
+{#                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">#}
+{#                  <div class="u-inner-container-layout u-sidenav-overflow">#}
+{#                    <div class="u-menu-close"></div>#}
+{#                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'board:index' %}">Главная</a>#}
+{#</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'board:analytics' %}">Аналитика</a>#}
+{#</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'board:analytics' %}">Архив</a>#}
+{#</li></ul>#}
+{#                  </div>#}
+{#                </div>#}
+{#                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>#}
+{#              </div>#}
+{#            </nav>#}
+{#          </div>#}
+{##}
+{#          <style class="u-sticky-style" data-style-id="f327">.u-sticky-fixed.u-sticky-f327, .u-body.u-sticky-fixed .u-sticky-f327 {#}
+{#box-shadow: -2px 0 9px 0 rgba(29,40,51,0.35) !important#}
+{#}</style>#}
+{#        </div>#}
+{#{% endif %}#}
+{##}
+{#      </div></header>#}
+
+
+
+    <header class="u-clearfix u-header u-sticky u-white" id="sec-8da3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://digital.gov.ru/ru/" class="u-image u-logo u-image-1" data-image-width="1923" data-image-height="575">
+          <img src="{% static 'img/83de25a3-ca82-456d-bf31-4dbc46dc7be0.jpeg' %}" class="u-logo-image u-logo-image-1">
+        </a>
+        <img class="u-image u-image-contain u-image-default u-image-2" src="{% static 'img/07fbe760-717a-4e7e-91a1-bd1a3481120f.jpeg' %}" alt="" data-image-width="749" data-image-height="551" data-href="https://www.niir.ru/ob-institute/struktura-3/seti-dostupa/">
+        <nav class="u-align-center u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 0.75rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-1"><li class="u-nav-item">{{ user.get_full_name }}
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-4 u-text-custom-color-4 u-text-hover-custom-color-12 " style="padding: 10px 12px;" href="{% url 'users:logout' %}">Выход</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item">{{ user.get_full_name }}
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'users:logout' %}">Выход</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <nav class="u-menu u-menu-one-level u-menu-2" data-responsive-from="MD" data-submenu-level="on-click">
+          <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 0.875rem; font-weight: 400;">
+            <a class="u-button-style u-custom-text-active-color u-custom-text-hover-color u-nav-link" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f031"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-f031" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-1 u-text-hover-custom-color-12" href="{% url 'board:index' %}" style="padding: 10px 8px;">ГЛАВНАЯ</a></li>
+
+                {% if perms.users.analytics %}
+                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-1 u-text-hover-custom-color-12" href="{% url 'board:analytics' %}" style="padding: 10px 8px;">Аналитика</a></li>
+                {% endif %}
+                {% if perms.users.archive %}
+                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-1 u-text-hover-custom-color-12" href="" style="padding: 10px 8px;">Архив</a></li>
+                {% endif %}
+
+                    {% if user.is_staff %}
+                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-custom-color-1 u-text-hover-custom-color-12" href="{% url 'admin:index' %}" style="padding: 10px 8px;">Панель администратора</a></li>
+                    {% endif %}
+
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-25 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'board:index' %}">ГЛАВНАЯ</a></li>
+                    {% if perms.users.analytics %}
+                        <li class="u-nav-item"><a class="u-button-style u-dialog-link u-nav-link" href="{% url 'board:analytics' %}">Аналитика</a></li>
+                    {% endif %}
+                    {% if perms.users.archive %}
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'board:analytics' %}">Архив</a></li>
+                    {% endif %}
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

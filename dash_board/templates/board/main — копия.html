@@ -1,0 +1,1713 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Главная
+{% endblock title %}
+
+{% block content %}
+    {% load static %}
+    {% load plotly_dash %}
+{% include 'includes/header.html' %}
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1",
+		"logo": "images/logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+    <style>
+        .donut-inner {
+            margin-top: -63%;
+            margin-bottom: 50%;
+            margin-left: 135px;
+
+        }
+
+        .donut-inner h2 {
+            margin-bottom: 1px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+
+    <section class="skrollable u-align-center u-clearfix u-image u-parallax u-shading u-section-1" src="" data-image-width="1200" data-image-height="675" id="sec-b403">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-center u-text u-text-default u-title u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="500">Результаты тестирования VPN-сервисов </h1>
+        <p class="u-align-center u-large-text u-text u-text-variant u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="500"> Сайт представляет собой платформу для хранения результатов<br>тестирования и их анализа. Кроме того, на сайте имеются разделы:<br>с усредненными показателями работоспособности VPN-сервисов, картой проведения тестирования, интерактивным графиком, доступом к заблокированным ресурсам без VPN, а также с отчетными материалами.<br>Вы можете легко найти интересующий вас раздел благодаря удобной навигации, расположенной ниже.
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-e8f7">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-custom-item u-effect-hover-zoom u-list-item u-repeater-item u-shading u-list-item-1" data-image-width="2000" data-image-height="1333" data-href="#sec-9926">
+              <div class="u-background-effect u-expanded">
+                <div class="u-background-effect-image u-expanded u-image u-shading u-image-1" data-image-width="1200" data-image-height="900" data-href="#sec-9926"></div>
+              </div>
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h4 class="u-align-center u-text u-text-1">Работоспособность VPN-сервисов</h4>
+              </div>
+            </div>
+            <div class="u-container-style u-custom-item u-effect-hover-zoom u-list-item u-repeater-item u-shading u-list-item-2" data-image-width="1200" data-image-height="749" data-href="#sec-54bd">
+              <div class="u-background-effect u-expanded">
+                <div class="u-background-effect-image u-expanded u-image u-shading u-image-2" data-image-width="1200" data-image-height="749" data-href="#sec-54bd"></div>
+              </div>
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h4 class="u-align-center u-text u-text-2">Карта тестирования VPN</h4>
+              </div>
+            </div>
+            <div class="u-container-style u-custom-item u-effect-hover-zoom u-list-item u-repeater-item u-shading u-list-item-3" data-image-width="2000" data-image-height="1333" data-href="#sec-1346">
+              <div class="u-background-effect u-expanded">
+                <div class="u-background-effect-image u-expanded u-image u-shading u-image-3" data-image-width="1600" data-image-height="874" data-href="#sec-1346"></div>
+              </div>
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h4 class="u-align-center u-text u-text-3">Интерактивный график</h4>
+              </div>
+            </div>
+            <div class="u-container-style u-custom-item u-effect-hover-zoom u-list-item u-repeater-item u-shading u-list-item-4" data-image-width="1920" data-image-height="1360" data-href="#sec-2f31">
+              <div class="u-background-effect u-expanded">
+                <div class="u-background-effect-image u-expanded u-image u-image-contain u-shading u-image-4" data-image-width="1280" data-image-height="1271" data-href="#sec-2f31"></div>
+              </div>
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <h4 class="u-align-center u-text u-text-4">Доступ к заблокированным ресурсам без VPN-сервисов<span style="font-weight: 700;">
+                    <span style="font-weight: 400;"></span>
+                  </span>
+                </h4>
+              </div>
+            </div>
+            <div class="u-container-style u-custom-item u-effect-hover-zoom u-list-item u-repeater-item u-shading u-list-item-5" data-image-width="1920" data-image-height="1360" data-href="#carousel_3d77">
+              <div class="u-background-effect u-expanded">
+                <div class="u-background-effect-image u-expanded u-image u-image-contain u-shading u-image-5" data-image-width="1200" data-image-height="1200" data-href="#carousel_3d77"></div>
+              </div>
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <h4 class="u-align-center u-text u-text-5">Отчеты и документы</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skrollable u-clearfix u-image u-parallax u-shading u-section-3" id="sec-9926" data-image-width="1341" data-image-height="892">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-body-alt-color u-text-default u-text-1">.</p>
+        <h1 class="u-text u-text-default u-text-2">Работоспособность<br>VPN сервисов
+        </h1>
+        <p class="u-large-text u-text u-text-variant u-text-3">На круговых диаграммах приведены процентные показатели работоспобности VPN-сервисов за прошлый и нынешний месяцы</p>
+      </div>
+    </section>
+
+<section class="u-clearfix u-grey-5 u-section-4" id="sec-efff">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-align-center u-text u-text-1">Работоспособность заблокированных VPN-сервисов</h3>
+          <div class="u-expanded-width u-list u-list-1">
+                                    <div class="u-layout" style="">
+                    <div class="u-layout-row" style="">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
+                  <h4 class="u-text u-text-default u-text-4">Июнь (124)</h4>
+                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_blocked_iyun"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_blocked_iyun_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_blocked_iyun'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_blocked_iyun_w }}, {{ circle_blocked_iyun_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                <h4 class="u-text u-text-default u-text-4">Июль (124)</h4>
+                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_blocked_iyul"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_blocked_iyul_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_blocked_iyul'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_blocked_iyul_w }}, {{ circle_blocked_iyul_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+                <h4 class="u-text u-text-default u-text-4">Август (124)</h4>
+                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_blocked_avgust"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_blocked_avgust_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_blocked_avgust'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_blocked_avgust_w }}, {{ circle_blocked_avgust_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                            </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-5" id="carousel_29e9">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-align-center u-text u-text-1">Работоспособность незаблокированных VPN-сервисов</h3>
+        <div class="u-expanded-width u-list u-list-1">
+            <div class="u-layout" style="">
+                    <div class="u-layout-row" style="">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
+                <h4 class="u-text u-text-default u-text-4">Июнь (31)</h4>
+                                                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_allowed_iyun"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_allowed_iyun_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_allowed_iyun'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_allowed_iyun_w }}, {{ circle_allowed_iyun_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                <h4 class="u-text u-text-default u-text-4">Июль (31)</h4>
+                                                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_allowed_iyul"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_allowed_iyul_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_allowed_iyul'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_allowed_iyul_w }}, {{ circle_allowed_iyul_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+                <h4 class="u-text u-text-default u-text-4">Август (31)</h4>
+                                                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_allowed_avgust"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_allowed_avgust_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_allowed_avgust'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_allowed_avgust_w }}, {{ circle_allowed_avgust_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+            </div>
+          </div>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-6" id="carousel_72c1">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-align-center u-text u-text-1">Работоспособность всех VPN-сервисов</h3>
+        <div class="u-expanded-width u-list u-list-1">
+            <div class="u-layout" style="">
+                <div class="u-layout-row" style="">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
+                <h4 class="u-text u-text-default u-text-4">Июнь (155)</h4>
+                                                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_all_iyun"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_all_iyun_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_all_iyun'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_all_iyun_w }}, {{ circle_all_iyun_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                <h4 class="u-text u-text-default u-text-4">Июль (155)</h4>
+                                                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_all_iyul"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_all_iyul_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_all_iyul'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_all_iyul_w }}, {{ circle_all_iyul_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+                <h4 class="u-text u-text-default u-text-4">Август (155)</h4>
+                                                <div>
+
+                                    <div style="width: 100%;">
+                                        <canvas id="Circle_all_avgust"></canvas>
+
+                                    </div>
+                                    <div class="donut-inner">
+                                        <h2>{{ circle_all_avgust_w }}%</h2>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+                                        new Chart(document.getElementById('Circle_all_avgust'), {
+                                            type: 'doughnut',
+                                            data: {
+                                                labels: [
+                                                    'Работоспособность',
+                                                ],
+                                                datasets: [{
+                                                    data: [{{ circle_all_avgust_w }}, {{ circle_all_avgust_n }}],
+                                                    backgroundColor: [
+                                                        'rgb(33,217,51)',
+                                                        'rgb(245, 124, 115)',
+                                                    ],
+                                                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                    borderWidth: 1,
+                                                    borderRadius: 20,
+
+                                                }]
+                                            },
+                                            options: {
+                                                radius: '90%',
+                                                cutout: '90%',
+                                                plugins: {
+                                                    legend: {
+                                                        display: true,
+                                                        position: 'bottom',
+                                                    },
+                                                },
+
+                                            },
+
+                                        });
+
+                                    </script>
+                                </div>
+              </div>
+            </div>
+          </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="u-clearfix u-grey-5 u-section-6" id="sec-efff3">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h3 class="u-align-center u-text u-text-default u-text-1">
+                Работоспособность VPN-сервисов помесячно</h3>
+            <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout" style="">
+                    <div class="u-layout-row" style="">
+                        <div class="u-container-style u-layout-cell u-left-cell u-size-60 u-size-xs-60 u-layout-cell-1"
+                             src="">
+                            <div class="u-container-layout u-valign-bottom u-container-layout-1">
+                                <div>
+                                    <div style="width: 100%;">
+                                        <canvas id="line"></canvas>
+                                    </div>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                    <script>
+
+                                        new Chart(document.getElementById('line').getContext('2d'), {
+                                            type: 'line',
+                                            data: {
+                                                labels: [['Январь'], ['Февраль', '(заблокированные VPN (55->95))'], ['Март'], ['Апрель'], ['Май', '(заблокированные VPN (95->124))'], ['Июнь'], ['Июль'], ['Август'],],
+                                                datasets: [
+                                                    {
+                                                        label: 'Заблокированные, %',
+                                                        data: {{ line_blocked }},
+                                                        backgroundColor: [
+                                                            'rgba(255, 99, 132, 1)',
+                                                        ],
+                                                        borderColor: [
+                                                            'rgb(255, 99, 132)',
+
+                                                        ],
+                                                        tension: 0.2,
+                                                        fill: false,
+                                                    },
+                                                    {
+                                                        label: 'Не заблокированные, %',
+                                                        data: {{ line_allowed }},
+                                                        backgroundColor: [
+                                                            'rgb(21,147,245)',
+
+                                                        ],
+                                                        borderColor: [
+                                                            'rgb(23,143,236)',
+
+                                                        ],
+                                                        tension: 0.2,
+                                                        fill: false,
+                                                    },
+                                                    {
+                                                        label: 'Все, %',
+                                                        data: {{ line_all }},
+                                                        backgroundColor: [
+                                                            'rgb(17,238,10)',
+                                                        ],
+                                                        borderColor: [
+                                                            'rgb(19,229,13)',
+
+                                                        ],
+                                                        tension: 0.2,
+                                                        fill: false,
+                                                    },
+                                                ]
+                                            }
+
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skrollable u-align-left u-clearfix u-image u-parallax u-shading u-section-7" src="" id="sec-54bd" data-image-width="1200" data-image-height="749">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-title u-text-1">Карта проведения тестирования</h1>
+        <p class="u-large-text u-text u-text-variant u-text-2">Позволяет узнать результаты тестирования в выбранной точке на карте.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-white u-section-8" id="carousel_bd0a">
+
+                <div class="{% plotly_class name='map' %} "
+             style="height: 800px; width: 100%">
+            <!-- style="height: 100%; width: 100%" -->
+            {% plotly_app name='map' ratio=1 %}
+
+      </div>
+    </section>
+    <section class="skrollable u-clearfix u-image u-parallax u-section-9" id="sec-1346" data-image-width="1000" data-image-height="999">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-body-alt-color u-text-1">Интерактивный график</h1>
+        <p class="u-text u-text-body-alt-color u-text-2">
+          <span style="font-size: 1.5rem;"> График позволяет визуализировать результаты тестирования по выбранным параметрам</span>
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-10" id="sec-41e3">
+<div class="u-container-layout u-valign-bottom u-container-layout">
+
+            <div class="{% plotly_class name='dynamic_graph' %} "
+                 style="height: 800px; width: 100%">
+                <!-- style="height: 100%; width: 100%" -->
+                {% plotly_app name='dynamic_graph' ratio=1 %}
+            </div>
+
+</div>
+
+
+    </section>
+
+<section class="skrollable u-clearfix u-image u-parallax u-shading u-section-11" id="sec-2f31" data-image-width="1280" data-image-height="1271">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Доступ к заблокированным ресурсам (Facebook и Instagram) без VPN-сервисов</h1>
+        <p class="u-large-text u-text u-text-variant u-text-2">Доступ к заблокированным ресурсам без VPN-сервисов (гистограммы Ганта, табличная форма, карта)</p>
+      </div>
+    </section>
+
+
+
+<section class="u-align-center u-clearfix u-section-12" id="sec-2eeb">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-tab-links-align-center u-tabs u-tabs-1">
+          <ul class="u-spacing-16 u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item" role="presentation">
+              <a class="active u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-1" id="link-tab-6a2a" href="#tab-6a2a" role="tab" aria-controls="tab-6a2a" aria-selected="true">По всем операторам</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-2" id="link-tab-ff62" href="#tab-ff62" role="tab" aria-controls="tab-ff62" aria-selected="false">Теле2</a>
+            </li>
+<!--            <li class="u-tab-item" role="presentation">-->
+<!--              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-3" id="link-tab-6210" href="#tab-6210" role="tab" aria-controls="tab-6210" aria-selected="false">Мегафон</a>-->
+<!--            </li>-->
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-4" id="link-tab-e874" href="#tab-e874" role="tab" aria-controls="tab-e874" aria-selected="false">Билайн</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-5" id="link-tab-f60a" href="#tab-f60a" role="tab" aria-controls="tab-f60a" aria-selected="false">МТС</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-6" id="link-tab-0bd8" href="#tab-0bd8" role="tab" aria-controls="tab-0bd8" aria-selected="false">Ростелеком (мобильный)</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-7" id="link-tab-7390" href="#tab-7390" role="tab" aria-controls="tab-7390" aria-selected="false">Ростелеком</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-8" id="link-tab-c199" href="#tab-c199" role="tab" aria-controls="tab-c199" aria-selected="false">МГТС</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-9" id="link-tab-13a4" href="#tab-13a4" role="tab" aria-controls="tab-13a4" aria-selected="false">Табличная форма</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+
+              <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-6a2a" role="tabpanel" aria-labelledby="link-tab-6a2a">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="{% plotly_class name='without_vpn' %} "
+                 style="height: 100px; width: 100%">
+                <!-- style="height: 100%; width: 100%" -->
+                {% plotly_app name='without_vpn' ratio=1 %}
+            </div>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-ff62" role="tabpanel" aria-labelledby="link-tab-ff62">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="{% plotly_class name='without_vpn_tele2' %} "
+                 style="height: 300px; width: 100%">
+                <!-- style="height: 100%; width: 100%" -->
+                {% plotly_app name='without_vpn_tele2' ratio=1 %}
+            </div>
+              </div>
+            </div>
+            {#<div class="u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-6210" role="tabpanel" aria-labelledby="link-tab-6210">#}
+              {#<div class="u-container-layout u-container-layout-3">#}
+                {#<div class="{% plotly_class name='without_vpn_megafon' %} "#}
+                 {#style="height: 300px; width: 100%">#}
+                <!-- style="height: 100%; width: 100%" -->
+                {#{% plotly_app name='without_vpn_megafon' ratio=1 %}#}
+            {#</div>#}
+              {#</div>#}
+            {#</div>#}
+            <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-4" id="tab-e874" role="tabpanel" aria-labelledby="link-tab-e874">
+              <div class="u-container-layout u-container-layout-4">
+                <div class="{% plotly_class name='without_vpn_beeline' %} "
+                 style="height: 300px; width: 100%">
+                <!-- style="height: 100%; width: 100%" -->
+                {% plotly_app name='without_vpn_beeline' ratio=1 %}
+            </div>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-5" id="tab-f60a" role="tabpanel" aria-labelledby="link-tab-f60a">
+              <div class="u-container-layout u-container-layout-5">
+                <div class="{% plotly_class name='without_vpn_mts' %} "
+                 style="height: 300px; width: 100%">
+                <!-- style="height: 100%; width: 100%" -->
+                {% plotly_app name='without_vpn_mts' ratio=1 %}
+            </div>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-6" id="tab-0bd8" role="tabpanel" aria-labelledby="link-tab-0bd8">
+              <div class="u-container-layout u-container-layout-6">
+                <div class="{% plotly_class name='without_vpn_rostelecom_mobile' %} "
+                 style="height: 300px; width: 100%">
+                <!-- style="height: 100%; width: 100%" -->
+                {% plotly_app name='without_vpn_rostelecom_mobile' ratio=1 %}
+            </div>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-7" id="tab-7390" role="tabpanel" aria-labelledby="link-tab-7390">
+              <div class="u-container-layout u-container-layout-7">
+                <div class="{% plotly_class name='without_vpn_rostelecom' %} "
+                 style="height: 300px; width: 100%">
+                <!-- style="height: 100%; width: 100%" -->
+                {% plotly_app name='without_vpn_rostelecom' ratio=1 %}
+            </div>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-8" id="tab-c199" role="tabpanel" aria-labelledby="link-tab-c199">
+              <div class="u-container-layout u-container-layout-8">
+                <div class="{% plotly_class name='without_vpn_mgts' %} "
+                 style="height: 300px; width: 100%">
+                <!-- style="height: 100%; width: 100%" -->
+                {% plotly_app name='without_vpn_mgts' ratio=1 %}
+            </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+              <div class="u-container-style u-tab-pane u-white u-tab-pane-7" id="tab-13a4" role="tabpanel" aria-labelledby="link-tab-13a4">
+              <div class="u-container-layout u-container-layout-7">
+                <div class="u-expanded-width u-table u-table-responsive u-table-1">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="11%">
+                      <col width="11%">
+                      <col width="9.8%">
+                      <col width="12.2%">
+                      <col width="11%">
+                      <col width="10.900000000000006%">
+                      <col width="11.8%">
+                      <col width="10.8%">
+                      <col width="11.400000000000006%">
+                    </colgroup>
+                    <thead class="u-align-center u-custom-color-5 u-custom-font u-table-header u-text-font u-table-header-1">
+                      <tr style="height: 42px;">
+                        <th class="u-border-3 u-border-white u-table-cell">№ Точки</th>
+                        <th class="u-border-3 u-border-white u-table-cell">Город</th>
+                        <th class="u-border-3 u-border-white u-table-cell">Операцонная система</th>
+                        <th class="u-border-3 u-border-white u-table-cell">Оператор</th>
+                        <th class="u-border-3 u-border-white u-table-cell u-table-cell-5">Дата</th>
+                        <th class="u-border-3 u-border-white u-table-cell u-table-cell-6">Facebook<br>web
+                        </th>
+                        <th class="u-border-3 u-border-white u-table-cell u-table-cell-7">Facebook<br>app
+                        </th>
+                        <th class="u-border-3 u-border-white u-table-cell u-table-cell-8">Instagram<br>web
+                        </th>
+                        <th class="u-border-3 u-border-white u-table-cell u-table-cell-9">Instagram<br>app
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="u-align-center u-custom-color-4 u-custom-font u-table-body u-text-font u-table-body-1">
+                      <tr style="height: 42px;">
+                        <td rowspan="19" class="u-border-3 u-border-white u-table-cell">1</td>
+                        <td rowspan="19" class="u-border-3 u-border-white u-table-cell">Москва</td>
+                        <td rowspan="19" class="u-border-3 u-border-white u-table-cell">Android</td>
+                          <td rowspan="13" class="u-border-3 u-border-white u-table-cell">Ростелеком<br>(мобильный)</td>
+                          <td class="u-border-3 u-border-white u-table-cell">23.03.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">06.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">09.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">17.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">20.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">21.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">23.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">24.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">25.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">27.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">01.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">02.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">07.07.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+
+                      <tr style="height: 42px;">
+                          <td rowspan="2" class="u-border-3 u-border-white u-table-cell">МГТС</td>
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">12.03.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">10.08.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="4" class="u-border-3 u-border-white u-table-cell">Билайн</td>
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">06.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">10.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">14.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">21.06.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+
+                      <tr style="height: 42px;">
+                        <td rowspan="2" class="u-border-3 u-border-white u-table-cell">2</td>
+                        <td rowspan="2" class="u-border-3 u-border-white u-table-cell">Москва</td>
+                        <td rowspan="2" class="u-border-3 u-border-white u-table-cell">IOS</td>
+                        <td rowspan="2" class="u-border-3 u-border-white u-table-cell">МТС</td>
+                        <td class="u-border-3 u-border-white u-table-cell u-table-cell-23">03.04.2023</td>
+                        <td class="u-border-3 u-border-white u-table-cell u-table-cell-24">+</td>
+                        <td class="u-border-3 u-border-white u-table-cell u-table-cell-25">+</td>
+                        <td class="u-border-3 u-border-white u-table-cell u-table-cell-26"></td>
+                        <td class="u-border-3 u-border-white u-table-cell u-table-cell-27">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td class="u-border-3 u-border-white u-table-cell">12.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                        <td class="u-border-3 u-border-white u-table-cell">3</td>
+                        <td class="u-border-3 u-border-white u-table-cell">Москва</td>
+                        <td class="u-border-3 u-border-white u-table-cell">IOS</td>
+                        <td class="u-border-3 u-border-white u-table-cell">МГТС</td>
+                        <td class="u-border-3 u-border-white u-table-cell">15.02.2023</td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                        <td class="u-border-3 u-border-white u-table-cell">+</td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                        <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                        <td class="u-border-3 u-border-white u-table-cell">4</td>
+                        <td class="u-border-3 u-border-white u-table-cell">Москва</td>
+                        <td class="u-border-3 u-border-white u-table-cell">Android</td>
+                        <td class="u-border-3 u-border-white u-table-cell">МТС</td>
+                        <td class="u-border-3 u-border-white u-table-cell">24.01.2023</td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                        <td class="u-border-3 u-border-white u-table-cell">+</td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                        <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                        <td rowspan="3" class="u-border-3 u-border-white u-table-cell">5</td>
+                        <td rowspan="3" class="u-border-3 u-border-white u-table-cell">Москва</td>
+                        <td rowspan="3" class="u-border-3 u-border-white u-table-cell">IOS</td>
+                        <td rowspan="1" class="u-border-3 u-border-white u-table-cell">Билайн</td>
+                        <td class="u-border-3 u-border-white u-table-cell">27.04.2023</td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                        <td class="u-border-3 u-border-white u-table-cell">+</td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">Теле2</td>
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">06.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">МГТС</td>
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">08.06.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                      </tr>
+
+                      <tr style="height: 63px;">
+                        <td class="u-border-3 u-border-white u-table-cell">6</td>
+                        <td class="u-border-3 u-border-white u-table-cell"> Москва</td>
+                        <td class="u-border-3 u-border-white u-table-cell"> IOS</td>
+                        <td class="u-border-3 u-border-white u-table-cell">Ростелеком<br>(мобильный)
+                        </td>
+                        <td class="u-border-3 u-border-white u-table-cell">22.04.2023</td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                        <td class="u-border-3 u-border-white u-table-cell">+</td>
+                        <td class="u-border-3 u-border-white u-table-cell"></td>
+                        <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+
+                      <tr style="height: 42px;">
+                        <td  rowspan="2" class="u-border-3 u-border-white u-table-cell">8</td>
+                        <td  rowspan="2" class="u-border-3 u-border-white u-table-cell">Щелково<br>(Московская область)</td>
+                        <td  rowspan="2" class="u-border-3 u-border-white u-table-cell">Android</td>
+                        <td rowspan="1" class="u-border-3 u-border-white u-table-cell">Теле2</td>
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">27.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">МТС</td>
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">02.08.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+
+
+                      <tr style="height: 42px;">
+                        <td  rowspan="7" class="u-border-3 u-border-white u-table-cell">9</td>
+                        <td  rowspan="7" class="u-border-3 u-border-white u-table-cell">Балашиха<br>(Московская область)</td>
+                        <td  rowspan="7" class="u-border-3 u-border-white u-table-cell">Android</td>
+                        <td rowspan="4" class="u-border-3 u-border-white u-table-cell">МТС</td>
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">17.04.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">21.05.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">05.06.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">07.06.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="3" class="u-border-3 u-border-white u-table-cell">Ростелеком<br>(Wi-Fi)</td>
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">12.02.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">13.02.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+                      <tr style="height: 42px;">
+                          <td rowspan="1" class="u-border-3 u-border-white u-table-cell">14.02.2023</td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell"></td>
+                          <td class="u-border-3 u-border-white u-table-cell">+</td>
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+<!--<section class="u-align-center u-clearfix u-section-12" id="sec-2eeb">-->
+<!--      <div class="u-clearfix u-sheet u-sheet-1">-->
+<!--          <h3 class="u-align-center u-text u-text-default u-text-1">Доступ к заблокированным ресурсам без VPN-сервисов&nbsp;</h3>-->
+<!--        <div class="u-expanded-width u-tab-links-align-center u-tabs u-tabs-1">-->
+<!--          <ul class="u-spacing-37 u-tab-list u-unstyled" role="tablist">-->
+<!--            <li class="u-tab-item" role="presentation">-->
+<!--              <a class="active u-button-style u-tab-link u-text-active-custom-color-2 u-text-hover-custom-color-2 u-tab-link-1" id="link-tab-f356" href="#tab-f356" role="tab" aria-controls="tab-f356" aria-selected="true">По всем операторам</a>-->
+<!--            </li>-->
+<!--            <li class="u-tab-item u-tab-item-2" role="presentation">-->
+<!--              <a class="u-button-style u-tab-link u-text-active-custom-color-2 u-text-hover-custom-color-2 u-tab-link-2" id="link-tab-9700" href="#tab-9700" role="tab" aria-controls="tab-9700" aria-selected="false">Билайн</a>-->
+<!--            </li>-->
+<!--            <li class="u-tab-item u-tab-item-3" role="presentation">-->
+<!--              <a class="u-button-style u-tab-link u-text-active-custom-color-2 u-text-hover-custom-color-2 u-tab-link-3" id="link-tab-01a0" href="#tab-01a0" role="tab" aria-controls="tab-01a0" aria-selected="false">МТС</a>-->
+<!--            </li>-->
+<!--            <li class="u-tab-item" role="presentation">-->
+<!--              <a class="u-button-style u-tab-link u-text-active-custom-color-2 u-text-hover-custom-color-2 u-tab-link-4" id="link-tab-dd7f" href="#tab-dd7f" role="tab" aria-controls="tab-dd7f" aria-selected="false">Ростелеком (мобильный)</a>-->
+<!--            </li>-->
+<!--            <li class="u-tab-item" role="presentation">-->
+<!--              <a class="u-button-style u-tab-link u-text-active-custom-color-2 u-text-hover-custom-color-2 u-tab-link-5" id="link-tab-4ee4" href="#tab-4ee4" role="tab" aria-controls="tab-4ee4" aria-selected="false">Ростелеком</a>-->
+<!--            </li>-->
+<!--            <li class="u-tab-item" role="presentation">-->
+<!--              <a class="u-button-style u-tab-link u-text-active-custom-color-2 u-text-hover-custom-color-2 u-tab-link-6" id="link-tab-5991" href="#tab-5991" role="tab" aria-controls="tab-5991" aria-selected="false">МГТС</a>-->
+<!--            </li>-->
+<!--            <li class="u-tab-item" role="presentation">-->
+<!--              <a class="u-button-style u-tab-link u-text-active-custom-color-2 u-text-hover-custom-color-2 u-tab-link-7" id="link-tab-7347" href="#tab-7347" role="tab" aria-controls="tab-7347" aria-selected="false">Табличная форма</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--          <div class="u-tab-content">-->
+<!--            <div class="u-container-style u-tab-active u-tab-pane" id="tab-f356" role="tabpanel" aria-labelledby="link-tab-f356">-->
+<!--              <div class="u-container-layout u-container-layout-1">-->
+<!--&lt;!&ndash;                  <div class="u-container-layout u-valign-bottom u-container-layout">&ndash;&gt;-->
+
+<!--            <div class="{% plotly_class name='without_vpn' %} "-->
+<!--                 style="height: 100px; width: 100%">-->
+<!--                &lt;!&ndash; style="height: 100%; width: 100%" &ndash;&gt;-->
+<!--                {% plotly_app name='without_vpn' ratio=1 %}-->
+<!--            </div>-->
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="u-container-style u-tab-pane u-tab-pane-2" id="tab-9700" role="tabpanel" aria-labelledby="link-tab-9700">-->
+<!--              <div class="u-container-layout u-container-layout-2">-->
+<!--                  <div class="{% plotly_class name='without_vpn_beeline' %} "-->
+<!--                 style="height: 300px; width: 100%">-->
+<!--                &lt;!&ndash; style="height: 100%; width: 100%" &ndash;&gt;-->
+<!--                {% plotly_app name='without_vpn_beeline' ratio=1 %}-->
+<!--            </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="u-container-style u-tab-pane u-tab-pane-3" id="tab-01a0" role="tabpanel" aria-labelledby="link-tab-01a0">-->
+<!--              <div class="u-container-layout u-container-layout-3">-->
+<!--                  <div class="{% plotly_class name='without_vpn_mts' %} "-->
+<!--                 style="height: 300px; width: 100%">-->
+<!--                &lt;!&ndash; style="height: 100%; width: 100%" &ndash;&gt;-->
+<!--                {% plotly_app name='without_vpn_mts' ratio=1 %}-->
+<!--            </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="u-container-style u-tab-pane" id="tab-dd7f" role="tabpanel" aria-labelledby="link-tab-dd7f">-->
+<!--              <div class="u-container-layout u-container-layout-4">-->
+<!--                  <div class="{% plotly_class name='without_vpn_rostelecom_mobile' %} "-->
+<!--                 style="height: 300px; width: 100%">-->
+<!--                &lt;!&ndash; style="height: 100%; width: 100%" &ndash;&gt;-->
+<!--                {% plotly_app name='without_vpn_rostelecom_mobile' ratio=1 %}-->
+<!--            </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="u-container-style u-tab-pane" id="tab-4ee4" role="tabpanel" aria-labelledby="link-tab-4ee4">-->
+<!--              <div class="u-container-layout u-container-layout-5">-->
+<!--                  <div class="{% plotly_class name='without_vpn_rostelecom' %} "-->
+<!--                 style="height: 300px; width: 100%">-->
+<!--                &lt;!&ndash; style="height: 100%; width: 100%" &ndash;&gt;-->
+<!--                {% plotly_app name='without_vpn_rostelecom' ratio=1 %}-->
+<!--            </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="u-container-style u-tab-pane" id="tab-5991" role="tabpanel" aria-labelledby="link-tab-5991">-->
+<!--              <div class="u-container-layout u-container-layout-6">-->
+<!--                  <div class="{% plotly_class name='without_vpn_mgts' %} "-->
+<!--                 style="height: 300px; width: 100%">-->
+<!--                &lt;!&ndash; style="height: 100%; width: 100%" &ndash;&gt;-->
+<!--                {% plotly_app name='without_vpn_mgts' ratio=1 %}-->
+<!--            </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="u-container-style u-tab-pane" id="tab-7347" role="tabpanel" aria-labelledby="link-tab-7347">-->
+<!--              <div class="u-container-layout u-container-layout-7">-->
+<!--                <div class="u-expanded-width u-table u-table-responsive u-table-1">-->
+<!--                  <table class="u-table-entity">-->
+<!--                    <colgroup>-->
+<!--                      <col width="20%">-->
+<!--                      <col width="20%">-->
+<!--                      <col width="20%">-->
+<!--                      <col width="20%">-->
+<!--                      <col width="20%">-->
+<!--                    </colgroup>-->
+<!--                    <thead class="u-align-center u-custom-color-1 u-table-header u-table-header-1">-->
+<!--                      <tr style="height: 42px;">-->
+<!--                        <th class="u-border-5 u-border-white u-table-cell">№ Точки</th>-->
+<!--                        <th class="u-border-5 u-border-white u-table-cell">Город</th>-->
+<!--                        <th class="u-border-5 u-border-white u-table-cell">Операцонная система</th>-->
+<!--                        <th class="u-border-5 u-border-white u-table-cell">Оператор</th>-->
+<!--                        <th class="u-border-5 u-border-white u-table-cell u-table-cell-5">Дата</th>-->
+<!--                      </tr>-->
+<!--                    </thead>-->
+<!--                    <tbody class="u-align-center u-custom-color-1 u-custom-font u-heading-font u-table-body u-table-body-1">-->
+<!--                      <tr style="height: 252px;">-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">1</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Москва</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Android</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell u-table-valign-middle">-->
+<!--                          <br>-->
+<!--                          <br>-->
+<!--                          <br>-->
+<!--                          <br>Ростелеком<br>(мобильный)<br>-->
+<!--                          <br>-->
+<!--                          <br>-->
+<!--                          <br>-->
+<!--                          <br>МГТС-->
+<!--                        </td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell u-table-cell-10">06.04.2023<br>09.04.2023<br>17.04.2023<br>20.04.2023<br>21.04.2023<br>23.04.2023<br>24.04.2023<br>25.04.2023<br>27.04.2023<br>-->
+<!--                          <br>12.03.2023-->
+<!--                        </td>-->
+<!--                      </tr>-->
+<!--                      <tr style="height: 42px;">-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">2</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Москва</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">IOS</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">МТС</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell u-table-cell-15">03.04.2023</td>-->
+<!--                      </tr>-->
+<!--                      <tr style="height: 42px;">-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">3</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Москва</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">IOS</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">МГТС</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">15.02.2023</td>-->
+<!--                      </tr>-->
+<!--                      <tr style="height: 42px;">-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">4</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Москва</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Android</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">МТС</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">24.01.2023</td>-->
+<!--                      </tr>-->
+<!--                      <tr style="height: 42px;">-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">5</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Москва</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">IOS</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Билайн</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">27.04.2023</td>-->
+<!--                      </tr>-->
+<!--                      <tr style="height: 63px;">-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">6</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell"> Москва</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell"> IOS</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Ростелеком<br>(мобильный)-->
+<!--                        </td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">22.04.2023</td>-->
+<!--                      </tr>-->
+<!--                      <tr style="height: 126px;">-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">9</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Балашиха<br>(Московская область)-->
+<!--                        </td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">Android</td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">МТС<br>-->
+<!--                          <br>-->
+<!--                          <br>Ростелеком (Wi-Fi)-->
+<!--                        </td>-->
+<!--                        <td class="u-border-5 u-border-white u-table-cell">17.04.2023<br>-->
+<!--                          <br>12.02.2023<br>13.02.2023<br>14.02.2023-->
+<!--                        </td>-->
+<!--                      </tr>-->
+<!--                    </tbody>-->
+<!--                  </table>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+    <section class="u-clearfix u-white u-section-13" id="sec-9f7f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-align-center u-text u-text-default u-text-1">Карта доступности заблокированных ресурсов без VPN&nbsp;</h3>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="{% static 'img/96558bfd-f687-0e9e-0861-b7946f755aca.png' %}" alt="" data-image-width="1422" data-image-height="1536">
+      </div>
+    </section>
+
+    <section class="skrollable u-clearfix u-image u-parallax u-shading u-section-14" id="carousel_3d77" data-image-width="1200" data-image-height="1200">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Отчеты и документы</h1>
+        <p class="u-large-text u-text u-text-variant u-text-2">Ниже представлены ссылки на скачивание отчетных материалов и прочих документов</p>
+      </div>
+    </section>
+
+
+<section class="u-align-center u-clearfix u-white u-section-15" id="sec-681e">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-expanded-width u-tab-links-align-center u-tabs u-tabs-1">
+          <ul class="u-spacing-11 u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item" role="presentation">
+              <a class="active u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-1" id="link-tab-5bf4" href="#tab-5bf4" role="tab" aria-controls="tab-5bf4" aria-selected="true">Документы</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-2" id="link-tab-97f3" href="#tab-97f3" role="tab" aria-controls="tab-97f3" aria-selected="false">Отчеты по всем VPN</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-3" id="link-tab-c3a2" href="#tab-c3a2" role="tab" aria-controls="tab-c3a2" aria-selected="false">Отчеты по незаблокированным VPN</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-1-light-1 u-button-style u-palette-1-light-3 u-radius-50 u-tab-link u-tab-link-4" id="link-tab-5cc9" href="#tab-5cc9" role="tab" aria-controls="tab-5cc9" aria-selected="false">Отчеты по заблокированным VPN</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-5bf4" role="tabpanel" aria-labelledby="link-tab-5bf4">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="u-table u-table-responsive u-table-1">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="50%">
+                      <col width="50%">
+                    </colgroup>
+                    <tbody class="u-align-center u-table-body">
+                      <tr style="height: 55px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-first-column u-table-cell u-border-no-left u-border-no-top">Документы</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell u-border-no-top u-border-no-right">Ссылка на скачивание</td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-first-column u-table-cell u-border-no-left">Методика тестирования</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell u-border-no-right"><span class="u-file-icon u-file-link u-icon u-icon-1" data-href="{% url 'board:download_file' 'metodika.docx' %}"><img src="{% static 'img/32329.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-first-column u-table-cell u-border-no-left">Перечень заблокированных<br>VPN-сервисов
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell u-border-no-right"><span class="u-file-icon u-icon u-icon-2" data-href="{% url 'board:download_file' 'perechen_zablokirovannykh_vpn.xlsx' %}"><img src="{% static 'img/9338982.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-table-cell u-border-no-left u-border-no-bottom">Перечень незаблокированных<br>VPN-сервисов
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell u-border-no-right u-border-no-bottom"><span class="u-file-icon u-icon u-icon-2" data-href="{% url 'board:download_file' 'perechen_nezablokirovannykh_vpn.xlsx' %}"><img src="{% static 'img/9338982.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-97f3" role="tabpanel" aria-labelledby="link-tab-97f3">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="u-table u-table-responsive u-table-2">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="33.3%">
+                      <col width="33.3%">
+                      <col width="33.400000000000006%">
+                    </colgroup>
+                    <tbody class="u-align-center u-table-body">
+                      <tr style="height: 55px;">
+                        <td class="u-align-center u-first-column u-table-cell"></td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell">Отчеты</td>
+                        <td class="u-table-cell">Графики</td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-first-column u-table-cell">Январь</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-file-link u-icon u-icon-4" data-href="{% url 'board:download_file' 'Otchet_vse_yanvar.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-6" data-href="{% url 'board:download_file' 'Grafiki_vse_yanvar.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-first-column u-table-cell">Февраль</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-5" data-href="{% url 'board:download_file' 'Otchet_vse_fevral.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-6" data-href="{% url 'board:download_file' 'Grafiki_vse_fevral.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Март</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-7" data-href="{% url 'board:download_file' 'Otchet_vse_mart.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-8" data-href="{% url 'board:download_file' 'Grafiki_vse_mart.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Апрель</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-9" data-href="{% url 'board:download_file' 'Otchet_vse_aprel.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-10" data-href="{% url 'board:download_file' 'Grafiki_vse_aprel.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Май</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-9" data-href="{% url 'board:download_file' 'Otchet_vse_may.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-10" data-href="{% url 'board:download_file' 'Grafiki_vse_may.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Июнь</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-9" data-href="{% url 'board:download_file' 'Otchet_vse_iyun.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-10" data-href="{% url 'board:download_file' 'Grafiki_vse_iyun.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Июль</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-9" data-href="{% url 'board:download_file' 'Otchet_vse_iyul.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-10" data-href="{% url 'board:download_file' 'Grafiki_vse_iyul.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                    <tr style="height: 56px;">
+                        <td class="u-align-center u-first-column u-table-cell">Август</td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell"><span class="u-file-icon u-icon u-icon-9" data-href="{% url 'board:download_file' 'Otchet_vse_avgust.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-table-cell"><span class="u-file-icon u-icon u-icon-10" data-href="{% url 'board:download_file' 'Grafiki_vse_avgust.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-c3a2" role="tabpanel" aria-labelledby="link-tab-c3a2">
+              <div class="u-container-layout u-valign-middle u-container-layout-3">
+                <div class="u-table u-table-responsive u-table-3">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="33.3%">
+                      <col width="33.3%">
+                      <col width="33.400000000000006%">
+                    </colgroup>
+                    <tbody class="u-align-center u-table-body">
+                      <tr style="height: 55px;">
+                        <td class="u-align-center u-first-column u-table-cell"></td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell">Отчеты</td>
+                        <td class="u-table-cell">Графики</td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-first-column u-table-cell">Январь</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-file-link u-icon u-icon-11" data-href="{% url 'board:download_file' 'Otchet_nezablokirovannyye_yanvar.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-13" data-href="{% url 'board:download_file' 'Grafiki_nezablokirovannyye_yanvar.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-first-column u-table-cell">Февраль</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-12" data-href="{% url 'board:download_file' 'Otchet_nezablokirovannyye_fevral.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-13" data-href="{% url 'board:download_file' 'Grafiki_nezablokirovannyye_fevral.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Март</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-14" data-href="{% url 'board:download_file' 'Otchet_nezablokirovannyye_mart.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-15" data-href="{% url 'board:download_file' 'Grafiki_nezablokirovannyye_mart.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Апрель</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-16" data-href="{% url 'board:download_file' 'Otchet_nezablokirovannyye_aprel.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-17" data-href="{% url 'board:download_file' 'Grafiki_nezablokirovannyye_aprel.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Май</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-16" data-href="{% url 'board:download_file' 'Otchet_nezablokirovannyye_may.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-17" data-href="{% url 'board:download_file' 'Grafiki_nezablokirovannyye_may.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Июнь</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-16" data-href="{% url 'board:download_file' 'Otchet_nezablokirovannyye_iyun.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-17" data-href="{% url 'board:download_file' 'Grafiki_nezablokirovannyye_iyun.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Июль</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-16" data-href="{% url 'board:download_file' 'Otchet_nezablokirovannyye_iyul.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-17" data-href="{% url 'board:download_file' 'Grafiki_nezablokirovannyye_iyul.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                    <tr style="height: 56px;">
+                        <td class="u-align-center u-first-column u-table-cell">Август</td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell"><span class="u-file-icon u-icon u-icon-16" data-href="{% url 'board:download_file' 'Otchet_nezablokirovannyye_avgust.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-table-cell"><span class="u-file-icon u-icon u-icon-17" data-href="{% url 'board:download_file' 'Grafiki_nezablokirovannyye_avgust.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="u-align-left u-container-style u-tab-pane u-white u-tab-pane-4" id="tab-5cc9" role="tabpanel" aria-labelledby="link-tab-5cc9">
+              <div class="u-container-layout u-valign-top u-container-layout-4">
+                <div class="u-table u-table-responsive u-table-4">
+                  <table class="u-table-entity">
+                    <colgroup>
+                      <col width="33.3%">
+                      <col width="33.3%">
+                      <col width="33.400000000000006%">
+                    </colgroup>
+                    <tbody class="u-align-center u-table-body">
+                      <tr style="height: 55px;">
+                        <td class="u-align-center u-first-column u-table-cell"></td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell">Отчеты</td>
+                        <td class="u-table-cell">Графики</td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-first-column u-table-cell">Январь</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-file-link u-icon u-icon-18" data-href="{% url 'board:download_file' 'Otchet_zablokirovannyye_yanvar.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-20" data-href="{% url 'board:download_file' 'Grafiki_zablokirovannyye_yanvar.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-first-column u-table-cell">Февраль</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-19" data-href="{% url 'board:download_file' 'Otchet_zablokirovannyye_fevral.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-20" data-href="{% url 'board:download_file' 'Grafiki_zablokirovannyye_fevral.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Март</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-21" data-href="{% url 'board:download_file' 'Otchet_zablokirovannyye_mart.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-22" data-href="{% url 'board:download_file' 'Grafiki_zablokirovannyye_mart.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Апрель</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-23" data-href="{% url 'board:download_file' 'Otchet_zablokirovannyye_aprel.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-24" data-href="{% url 'board:download_file' 'Grafiki_zablokirovannyye_aprel.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Май</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-23" data-href="{% url 'board:download_file' 'Otchet_zablokirovannyye_may.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-24" data-href="{% url 'board:download_file' 'Grafiki_zablokirovannyye_may.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Июнь</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-23" data-href="{% url 'board:download_file' 'Otchet_zablokirovannyye_iyun.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-24" data-href="{% url 'board:download_file' 'Grafiki_zablokirovannyye_iyun.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                      <tr style="height: 56px;">
+                        <td class="u-align-center u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell">Июль</td>
+                        <td class="u-border-2 u-border-grey-75 u-table-cell"><span class="u-file-icon u-icon u-icon-23" data-href="{% url 'board:download_file' 'Otchet_zablokirovannyye_iyul.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-table-cell"><span class="u-file-icon u-icon u-icon-24" data-href="{% url 'board:download_file' 'Grafiki_zablokirovannyye_iyul.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                    <tr style="height: 56px;">
+                        <td class="u-align-center u-first-column u-table-cell">Август</td>
+                        <td class="u-border-2 u-border-grey-75 u-border-no-bottom u-border-no-top u-table-cell"><span class="u-file-icon u-icon u-icon-23" data-href="{% url 'board:download_file' 'Otchet_zablokirovannyye_avgust.docx' %}"><img src="{% static 'img/591813.png' %}" alt=""></span>
+                        </td>
+                        <td class="u-table-cell"><span class="u-file-icon u-icon u-icon-24" data-href="{% url 'board:download_file' 'Grafiki_zablokirovannyye_avgust.docx' %}"><img src="{% static 'img/2567990.png' %}" alt=""></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-04b5"><div class="u-clearfix u-sheet u-sheet-1">-->
+    <!--        <p class="u-small-text u-text u-text-variant u-text-1">НИИ Радио</p>-->
+    <!--      </div></footer>-->
+    <!--    <section class="u-backlink u-clearfix u-grey-80">-->
+    <!--      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">-->
+    <!--        <span>Website Templates</span>-->
+    <!--      </a>-->
+    <!--      <p class="u-text">-->
+    <!--        <span>created with</span>-->
+    <!--      </p>-->
+    <!--      <a class="u-link" href="" target="_blank">-->
+    <!--        <span>Website Builder Software</span>-->
+    <!--      </a>.-->
+    <!--    </section><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 20px; padding: 15px" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-85 u-palette-1-base" data-href="#">-->
+    <!--        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>-->
+    <!--        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>-->
+    <!--    </span>-->
+{%include 'includes/footer.html'%}
+{% endblock content %}
+
+
+<!-- dynamic_graph -->

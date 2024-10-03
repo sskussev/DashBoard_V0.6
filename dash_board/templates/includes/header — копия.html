@@ -1,0 +1,497 @@
+{% load static %}
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+                integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+                crossorigin="anonymous"></script>
+
+
+
+<div class="container">
+    <header class="container-fluid">
+
+
+
+
+
+        {#<a href="{% url 'posts:index' %}">#}
+        {#                        <img src="{% static 'img/logo.png' %}" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0">#}
+        {#                    </a>#}
+        {##}
+        {#        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">#}
+        {#            {% with request.resolver_match.view_name as view_name %}#}
+        {#                <li>#}
+        {#                    <a class="nav-link px-2 link-secondary"#}
+        {#                            {% if view_name  == 'posts:index' %}#}
+        {#                       active#}
+        {#                            {% endif %}"#}
+        {#                    href="{% url 'posts:index' %}" >Новости</a>#}
+        {#                </li>#}
+{#                        <li>#}
+{#                            <a class="nav-link px-2 link-dark"#}
+{#                                    {% if view_name  == 'form:work_1' %}#}
+{#                               active#}
+{#                                    {% endif %}"#}
+{#                            href="{% url 'form:work_1' %}">Тестирование</a>#}
+{#                        </li>#}
+        {#                {% if user.is_staff %}#}
+        {#                    <li>#}
+        {#                        <a class="nav-link px-2 link-dark"#}
+        {#                                {% if view_name  == 'posts:post_create' %}#}
+        {#                           active#}
+        {#                                {% endif %}"#}
+        {#                        href="{% url 'posts:post_create' %}">Новая запись</a>#}
+        {#                    </li>#}
+        {#                {% endif %}#}
+        {#            {% endwith %}#}
+        {#        </ul>#}
+        {##}
+        {#                    {% if user.is_authenticated %}#}
+        {#                        <div class="col-md-auto text-end">#}
+        {#                            <label> {{ user.get_full_name }} </label>#}
+        {#                            {% if user.is_staff %}#}
+        {#                            <a class="btn btn-outline-primary me-2" href="{% url 'form:vpn_registry' %}">Реестр VPN</a>#}
+        {#                            {% endif %}#}
+        {#                            <a class="btn btn-outline-primary me-2" href="{% url 'form:download_methodology' %}">Методика</a>#}
+        {#                            <a class="btn btn-outline-primary me-2" href="{% url 'form:download_list' %}">Перечень</a>#}
+        {#                            <a class="btn btn-outline-primary me-2" href="{% url 'users:password_change_form' %}">Сменить пароль</a>#}
+        {#                            <a class="btn btn-primary" aria-current="page" href="{% url 'users:logout' %}">Выйти</a>#}
+        {#                        </div>#}
+        {#                    {% else %}#}
+        {#                        <div class="col-md-auto text-end">#}
+        {#                            <a class="btn btn-outline-primary me-2" href="{% url 'users:login' %}">Войти</a>#}
+        {#                        </div>#}
+        {#                    {% endif %}#}
+
+
+
+
+
+{#    <nav class="navbar navbar-expand-lg navbar-light bg-danger">#}
+{#  <div class="container">#}
+{#    <a class="navbar-brand text-white" href="#">Navbar</a>#}
+{#    <button class="btn btn-danger navbar-toggler border-3 px-2" type="button" data-bs-toggle="offcanvas"#}
+{#      data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"#}
+{#      >#}
+{#    <img style="width: 30px" src="image/text-center.svg" alt="menu icon">#}
+{#    </button>#}
+{#    <div class="offcanvas offcanvas-start-lg bg-danger" tabindex="-1" id="offcanvasExample"#}
+{#      aria-labelledby="offcanvasExampleLabel"#}
+{#      >#}
+{#      <div class="offcanvas-header d-flex d-lg-none">#}
+{#        <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Navbar</h5>#}
+{#        <a href="javascript:void(0) "#}
+{#          class="text-reset p-0"#}
+{#          data-bs-dismiss="offcanvas"#}
+{#          aria-label="close"#}
+{#          >#}
+{#          <svg xmlns="http://www.w3.org/2000/svg"#}
+{#            width="24"#}
+{#            height="24"#}
+{#            fill="#FFFFFF"#}
+{#            class="bi bi-x-circle"#}
+{#            viewBox="0 0 16 16"#}
+{#            >#}
+{#            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>#}
+{#            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>#}
+{#          </svg>#}
+{#        </a>#}
+{#      </div>#}
+{#      <div class="offcanvas-body p-lg-0">#}
+{#        <ul class="navbar-nav">#}
+{#          <li class="nav-item">#}
+{#            <a class="nav-link active" aria-current="page" href="#">Home</a>#}
+{#          </li>#}
+{#          <li class="nav-item">#}
+{#            <a class="nav-link active" aria-current="page" href="#">Home</a>#}
+{#          </li>#}
+{#          <li class="nav-item">#}
+{#            <a class="nav-link active" aria-current="page" href="#">Home</a>#}
+{#          </li>#}
+{#          <li class="nav-item">#}
+{#            <a class="nav-link active" aria-current="page" href="#">Home</a>#}
+{#          </li>#}
+{#        </ul>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+{#</nav>#}
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+{#      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">#}
+{#          <li>#}
+      <div class="container-fluid col-auto">
+              <a href="{% url 'board:index' %}">
+                                <img src="{% static 'img/logo.png' %}" alt="" width="100" height="100" class="img-fluid" data-aos="fade-down" data-aos-delay="0">
+                            </a>
+      </div>
+{#          </li>#}
+
+{#          <li>#}
+{#              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
+{#      <span class="navbar-toggler-icon"></span>#}
+{#    </button>#}
+{#          </li>#}
+{#      </ul>#}
+<div class="container-fluid col-1">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          {% if user.is_authenticated %}
+
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'board:index' %}">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Контакты</a>
+        </li>
+          {% if user.is_staff %}
+
+              <li class="nav-item">
+              <a class="nav-link active" href="{% url 'admin:index' %}">Панель администратора</a>
+            </li>
+          {% endif %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'users:password_change_form' %}">Сменить пароль</a>
+        </li>
+                  <li class="nav-item">
+          <a class="nav-link" href="{% url 'users:logout' %}">Выйти</a>
+        </li>
+      {% else %}
+              </li>
+                  <li class="nav-item">
+          <a class="nav-link active" href="{% url 'users:login' %}">Войти</a>
+        </li>
+{% endif %}
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+{#        <nav class="mobile-offcanvas navbar navbar-light bg-light fixed-top">#}
+{#  <div class="container-fluid">#}
+{#<ul class="nav col-12 col-auto mb-2 justify-content-center mb-md-0">#}
+{#    <li>#}
+{#        <a href="{% url 'posts:index' %}">#}
+{#                                <img src="{% static 'img/logo.png' %}" alt="" width="100" height="100" class="img-fluid" data-aos="fade-down" data-aos-delay="0">#}
+{#                            </a>#}
+{#    </li>#}
+{#    <li>#}
+{#        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">#}
+{##}
+{#                    {% with request.resolver_match.view_name as view_name %}#}
+{#                        <li>#}
+{#                            <a class="nav-link px-2 link-secondary"#}
+{#                                    {% if view_name  == 'posts:index' %}#}
+{#                               active#}
+{#                                    {% endif %}"#}
+{#                            href="{% url 'posts:index' %}" >Новости</a>#}
+{#                        </li>#}
+{#                        <li>#}
+{#                            <a class="nav-link px-2 link-dark"#}
+{#                                    {% if view_name  == 'form:work_1' %}#}
+{#                               active#}
+{#                                    {% endif %}"#}
+{#                            href="{% url 'form:work_1' %}">Тестирование</a>#}
+{#                        </li>#}
+{#                        {% if user.is_staff %}#}
+{#                            <li>#}
+{#                                <a class="nav-link px-2 link-dark"#}
+{#                                        {% if view_name  == 'posts:post_create' %}#}
+{#                                   active#}
+{#                                        {% endif %}"#}
+{#                                href="{% url 'posts:post_create' %}">Новая запись</a>#}
+{#                            </li>#}
+{#                        {% endif %}#}
+{#                    {% endwith %}#}
+{##}
+{#                </ul>#}
+{##}
+{##}
+{#    </li>#}
+{#<li>#}
+{#    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">#}
+{#      <span class="navbar-toggler-icon"></span>#}
+{#    </button>#}
+{##}
+{##}
+{#    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasScrollingLabel">#}
+{#      <div class="offcanvas-header">#}
+{#        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>#}
+{#        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>#}
+{#      </div>#}
+{##}
+{##}
+{#        <div class="offcanvas-body">#}
+{#            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link active" aria-current="page"#}
+{#                       href="{% url 'form:work_1' %}">Тестирование</a>#}
+{#                </li>#}
+{##}
+{#                <li class="nav-item">#}
+{#                    <a class="dropdown-item"#}
+{#                       href="{% url 'form:vpn_registry' %}">Реестр#}
+{#                        VPN</a>#}
+{#                    <a class="dropdown-item"#}
+{#                       href="{% url 'form:download_methodology' %}">Методика</a>#}
+{#                    <a class="dropdown-item"#}
+{#                       href="{% url 'form:download_list' %}">Перечень</a>#}
+{#                    <a class="dropdown-item"#}
+{#                       href="{% url 'form:download_video' %}">Запрос#}
+{#                        видеозаписи</a>#}
+{#                    <a class="dropdown-item"#}
+{#                       href="{% url 'users:password_change_form' %}">Сменить#}
+{#                        пароль</a>#}
+{#                </li>#}
+{#            </ul>#}
+{#            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link active" aria-current="page"#}
+{#                       href="{% url 'users:logout' %}">Выйти</a>#}
+{#                </li>#}
+{#            </ul>#}
+{##}
+{##}
+{#        </div>#}
+{#        #}
+{#    </div>#}
+{#</li>#}
+{#</ul>#}
+{#  #}
+{#  </div>#}
+{#</nav>#}
+{#    </header>#}
+{#</div>#}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#        <nav class="navbar navbar-light bg-light fixed-top row-cols-auto">#}
+{##}
+{#            <div class="container-fluid">#}
+{#                <a href="{% url 'posts:index' %}">#}
+{#                    <img src="{% static 'img/logo.png' %}" alt=""#}
+{#                         class="img-fluid" data-aos="fade-down"#}
+{#                         data-aos-delay="0">#}
+{#                </a>#}
+{#                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">#}
+{#                    {% with request.resolver_match.view_name as view_name %}#}
+{#                        <li>#}
+{#                            <a class="nav-link px-2 link-secondary"#}
+{#                                    {% if view_name  == 'posts:index' %}#}
+{#                               active#}
+{#                                    {% endif %}"#}
+{#                            href="{% url 'posts:index' %}" >Новости</a>#}
+{#                        </li>#}
+{#                        <li>#}
+{#                            <a class="nav-link px-2 link-dark"#}
+{#                                    {% if view_name  == 'form:work_1' %}#}
+{#                               active#}
+{#                                    {% endif %}"#}
+{#                            href="{% url 'form:work_1' %}">Тестирование</a>#}
+{#                        </li>#}
+{#                        {% if user.is_staff %}#}
+{#                            <li>#}
+{#                                <a class="nav-link px-2 link-dark"#}
+{#                                        {% if view_name  == 'posts:post_create' %}#}
+{#                                   active#}
+{#                                        {% endif %}"#}
+{#                                href="{% url 'posts:post_create' %}">Новая#}
+{#                                запись</a>#}
+{#                            </li>#}
+{#                        {% endif %}#}
+{#                    {% endwith %}#}
+{#                </ul>#}
+{#                <button class="navbar-toggler" type="button"#}
+{#                        data-bs-toggle="offcanvas"#}
+{#                        data-bs-target="#offcanvasRight"#}
+{#                        aria-controls="offcanvasRight">#}
+{#                    <span class="navbar-toggler-icon"></span>#}
+{#                </button>#}
+{#                <div class="offcanvas offcanvas-end" tabindex="-1"#}
+{#                     id="offcanvasRight"#}
+{#                     aria-labelledby="offcanvasRightLabel">#}
+{#                    <div class="offcanvas-header">#}
+{#                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">#}
+{#                            Навигация</h5>#}
+{#                        <button type="button" class="btn-close text-reset"#}
+{#                                data-bs-dismiss="offcanvas"#}
+{#                                aria-label="Close"></button>#}
+{#                    </div>#}
+{#                    <div class="offcanvas-body">#}
+{#                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">#}
+{#                            <li class="nav-item">#}
+{#                                <a class="nav-link active" aria-current="page"#}
+{#                                   href="{% url 'form:work_1' %}">Тестирование</a>#}
+{#                            </li>#}
+{##}
+{#                            <li class="nav-item">#}
+{#                                <a class="dropdown-item"#}
+{#                                   href="{% url 'form:vpn_registry' %}">Реестр#}
+{#                                    VPN</a>#}
+{#                                <a class="dropdown-item"#}
+{#                                   href="{% url 'form:download_methodology' %}">Методика</a>#}
+{#                                <a class="dropdown-item"#}
+{#                                   href="{% url 'form:download_list' %}">Перечень</a>#}
+{#                                <a class="dropdown-item"#}
+{#                                   href="{% url 'form:download_video' %}">Запрос#}
+{#                                    видеозаписи</a>#}
+{#                                <a class="dropdown-item"#}
+{#                                   href="{% url 'users:password_change_form' %}">Сменить#}
+{#                                    пароль</a>#}
+{#                            </li>#}
+{#                        </ul>#}
+{#                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">#}
+{#                            <li class="nav-item">#}
+{#                                <a class="nav-link active" aria-current="page"#}
+{#                                   href="{% url 'users:logout' %}">Выйти</a>#}
+{#                            </li>#}
+{#                        </ul>#}
+{##}
+{##}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </nav>#}
+{##}
+{#    </header>#}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %}
+<header class="bg-bg-3 py-4 py-lg-7">
+    <div class="d-block d-lg-none">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3" data-aos="fade-down" data-aos-delay="0">
+                    <a class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#custom-id-i5ahjbfr">
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1">
+                            <path d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
+                    <a href="{% url 'form:work_1' %}">
+                        <img src="{% static 'img/logo.png' %}" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start bg-bg-3" id="custom-id-i5ahjbfr" aria-hidden="true">
+        <div class="offcanvas-header">
+            <a href="{% url 'form:work_1' %}">
+                <img src="{% static 'img/logo.png' %}" alt="" class="img-fluid">
+            </a>
+            <a class="btn btn-sm btn-width-equal-height btn-bg-3" data-bs-dismiss="offcanvas">
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-2">
+                    <path d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <a href="{% url 'form:work_1' %}" class="btn btn-action-1 btn-sm rounded-2">
+                Get Started
+            </a>
+        </div>
+    </div>
+    <div class="d-none d-lg-block">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-2">
+                    <a href="{% url 'form:work_1' %}">
+                        <img src="{% static 'img/logo.png' %}" alt="" class="img-fluid" data-aos="fade-down" data-aos-delay="0">
+                    </a>
+                </div>
+                <div class="text-end col-10">
+                    {% if user.is_authenticated %}
+                        <div class="col-md text-end">
+                            <label> {{ user.get_full_name }} </label>
+                            <a class="btn btn-outline-primary me-2" href="{% url 'form:download_video' %}">Запрос видеозаписи</a>
+                            <a class="btn btn-outline-primary me-2" href="{% url 'users:password_change_form' %}">Сменить пароль</a>
+                            <a class="btn btn-primary" aria-current="page" href="{% url 'users:logout' %}">Выйти</a>
+                        </div>
+                    {% else %}
+                        <div class="col-md text-end">
+                            <a class="btn btn-outline-primary me-2" href="{% url 'users:login' %}">Войти</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endcomment %}

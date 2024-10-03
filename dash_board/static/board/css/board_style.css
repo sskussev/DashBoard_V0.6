@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Roboto'; 
+    src: url('Roboto-Medium1.ttf');
+}
+
+html {
+    background-color: #f5f5f5;
+}
+
+li {
+    font-size: 35;
+    color: black;
+    list-style-type: none;
+    display: inline;
+}
+
+ul{
+    display: inline;
+}
+
+a{
+    text-decoration: none;   
+    color: black; 
+}
+
+.top_header_text{
+    font-size: 26px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Roboto';
+    color: black;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    flex: 1;
+}
+
+
+.top_header_nav_style{
+    padding: 10;
+    flex: 1;
+    width: 20%;
+}
+
+.pannel {
+    background-color: white;
+    border-bottom: thin whitesmoke solid;
+    padding-top: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: 'row';
+    /* width: 99vw; */
+
+}

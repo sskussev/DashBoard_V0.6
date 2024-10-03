@@ -1,0 +1,2647 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Главная
+{% endblock title %}
+
+{% block content %}
+    {% load static %}
+    {% load plotly_dash %}
+    {% include 'includes/header.html' %}
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Site1",
+        "logo": "images/logo.png"
+    }</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+    <style>
+        .donut-inner {
+            margin-top: -61%;
+            margin-bottom: 50%;
+            margin-left: 110px;
+
+        }
+
+        .donut-inner h2 {
+            margin-bottom: 1px;
+            margin-top: 0;
+            font-family: "Montserrat";
+            color: white;
+        }
+    </style>
+    </head>
+
+
+    <section class="u-align-center u-clearfix u-custom-color-1 u-section-1"
+             id="carousel_d9d0">
+        <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-align-left u-container-style u-layout-cell u-size-36-lg u-size-36-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1">
+                            <div class="u-container-layout u-container-layout-1">
+                                <h2 class="u-align-left u-custom-font u-font-montserrat u-text u-text-1">
+                    <span style="font-weight: 700;">
+                      <font style="vertical-align: inherit;"></font>
+                    </span>
+
+                                    <font style="vertical-align: inherit;">
+                                        Результаты&nbsp; </font>
+
+                                    <br>
+
+                                    <font style="vertical-align: inherit;">тестирования </font>
+
+                                    <br>
+
+                                    <font style="vertical-align: inherit;">VPN-сервисов</font>
+
+                                </h2>
+                                <p class="u-align-left u-custom-font u-font-montserrat u-text u-text-palette-1-light-3 u-text-2">
+
+                                    Сайт представляет собой платформу
+                                    для хранения результатов<br>тестирования и
+                                    их анализа. Кроме того, на сайте имеются
+                                    разделы:<br>с усредненными показателями
+                                    работоспособности VPN-сервисов, картой
+                                    проведения тестирования, интерактивным
+                                    графиком, доступом к заблокированным
+                                    ресурсам без VPN, а также&nbsp;<br>с
+                                    отчетными материалами. Вы можете легко
+                                    найти интересующий вас раздел благодаря
+                                    удобной навигации, расположенной ниже.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="u-align-left u-container-align-center u-container-style u-image u-image-contain u-image-default u-layout-cell u-size-24-lg u-size-24-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1"
+                             data-image-width="1920" data-image-height="1920">
+                            <div class="u-container-layout u-container-layout-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="u-expanded-width u-layout-horizontal u-list u-list-1">
+                <div class="u-repeater u-repeater-1">
+                    <div class="u-container-style u-custom-item u-gradient u-list-item u-radius-22 u-repeater-item u-shape-round u-list-item-1"
+                         data-href="#sec-f23d">
+                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+                            <h4 class="u-align-center u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-3">
+
+                                <font style="vertical-align: inherit;">
+                                    Работоспособность </font>
+
+                                <br>
+
+                                <font style="vertical-align: inherit;">VPN-сервисов</font>
+
+                            </h4>
+                            <img class="u-expanded-width u-image u-image-contain u-image-default u-image-2"
+                                 src="{% static 'img/4.Keywordresearch1.png' %}"
+                                 alt="" data-image-width="1501"
+                                 data-image-height="1500">
+                        </div>
+                    </div>
+                    <div class="u-align-center u-container-style u-custom-item u-gradient u-list-item u-radius-22 u-repeater-item u-shape-round u-list-item-2"
+                         data-href="#sec-ad20">
+                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-4">
+                            <h4 class="u-align-center u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-4">
+
+                                <font style="vertical-align: inherit;"> Карты
+                                    тестирования VPN</font>
+
+                            </h4>
+                            <img class="u-expanded-width u-image u-image-contain u-image-default u-image-3"
+                                 src="{% static 'img/1.WebReport1.png' %}"
+                                 alt=""
+                                 data-image-width="1500"
+                                 data-image-height="1500">
+                        </div>
+                    </div>
+                    <div class="u-container-style u-custom-item u-gradient u-list-item u-radius-22 u-repeater-item u-shape-round u-list-item-3"
+                         data-href="#carousel_90e4">
+                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-5">
+                            <h4 class="u-align-center u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-5">
+
+                                <font style="vertical-align: inherit;">
+                                    Интерактивный ﻿график</font>
+
+                            </h4>
+                            <img class="u-expanded-width u-image u-image-contain u-image-default u-image-4"
+                                 src="{% static 'img/Chart_perspective_matte.svg' %}"
+                                 alt="" data-image-width="1500"
+                                 data-image-height="1500">
+                        </div>
+                    </div>
+                    <div class="u-container-style u-custom-item u-gradient u-list-item u-radius-22 u-repeater-item u-shape-round u-list-item-4"
+                         data-href="#sec-2da0">
+                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-6">
+                            <h4 class="u-align-center u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-6">
+
+                                <font style="vertical-align: inherit;"> Доступ&nbsp; </font>
+
+                                <br>
+
+                                <font style="vertical-align: inherit;">к
+                                    заблокированным ресурсам без ﻿</font>
+
+                                <br>
+
+
+                                <font style="vertical-align: inherit;">﻿VPN-сервисов</font>
+
+                            </h4>
+                            <img class="u-expanded-width u-image u-image-contain u-image-default u-image-5"
+                                 src="{% static 'img/3.WebCheck1.png' %}"
+                                 alt=""
+                                 data-image-width="1501"
+                                 data-image-height="1500">
+                        </div>
+                    </div>
+                    <div class="u-container-style u-custom-item u-gradient u-list-item u-radius-22 u-repeater-item u-shape-round u-list-item-5"
+                         data-href="#sec-c680-1">
+                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-7">
+                            <h4 class="u-align-center u-custom-font u-custom-item u-font-montserrat u-text u-text-body-alt-color u-text-7">
+
+                                <font style="vertical-align: inherit;"> Отчеты&nbsp; </font>
+
+                                <br>
+
+                                <font style="vertical-align: inherit;">и
+                                    документы</font>
+
+                            </h4>
+                            <img class="u-expanded-width u-image u-image-contain u-image-default u-image-6"
+                                 src="{% static 'img/Page_perspective_matte.svg' %}"
+                                 alt="" data-image-width="1500"
+                                 data-image-height="1500">
+                        </div>
+                    </div>
+                </div>
+                <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-hidden u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+                   href="#" role="button">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+                    <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+                </a>
+                <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-hidden u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+                   href="#" role="button">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+                    <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-custom-color-1 u-section-2" id="sec-f23d">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-1">
+
+                <font style="vertical-align: inherit;"> Работоспособность
+                    VPN-сервисо​​в </font>
+
+            </h1>
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-2">
+
+                <font style="vertical-align: inherit;"></font>
+                На круговых диаграммах приведены процентные показатели
+                работоспособности&nbsp;<br>VPN-сервисов за последние 3 отчетных периода
+            </h1>
+            <div class="u-align-left u-container-style u-expanded-width u-gradient u-group u-radius-30 u-shape-round u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-white u-text-3">
+
+                        <font style="vertical-align: inherit;">
+                            Работоспособность
+                            заблокированных VPN-сервисов</font>
+
+                    </h4>
+                    <div class="u-list u-list-1">
+                        <div class="u-repeater u-repeater-1">
+
+
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-5">
+
+                                                <font style="vertical-align: inherit;">{{ circle_before_last_month }}
+                                                    (124)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_blocked_before_last"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_blocked_before_last_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_blocked_before_last'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_blocked_before_last_w }}, {{ circle_blocked_before_last_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-6">
+
+                                                <font style="vertical-align: inherit;">{{ circle_last_month }}
+                                                    (124)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_blocked_last"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_blocked_last_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_blocked_last'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_blocked_last_w }}, {{ circle_blocked_last_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-6">
+
+                                                <font style="vertical-align: inherit;">{{ circle_present_month }}
+                                                    (124)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_blocked_present"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_blocked_present_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_blocked_present'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_blocked_present_w }}, {{ circle_blocked_present_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-7">
+
+                        <font style="vertical-align: inherit;">Работоспособность</font>
+
+                    </h6>
+                    <div class="u-custom-color-8 u-radius-10 u-shape u-shape-round u-shape-1"></div>
+                </div>
+            </div>
+            <div class="u-align-left u-container-style u-expanded-width u-gradient u-group u-radius-30 u-shape-round u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-white u-text-3">
+
+                        <font style="vertical-align: inherit;">
+                            Работоспособность незаблокированных
+                            VPN-сервисов</font>
+
+                    </h4>
+                    <div class="u-list u-list-1">
+                        <div class="u-repeater u-repeater-1">
+
+
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-5">
+
+                                                <font style="vertical-align: inherit;">{{ circle_before_last_month }}
+                                                    (31)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_allowed_before_last"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_allowed_before_last_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_allowed_before_last'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_allowed_before_last_w }}, {{ circle_allowed_before_last_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-6">
+
+                                                <font style="vertical-align: inherit;">{{ circle_last_month }}
+                                                    (31)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_allowed_last"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_allowed_last_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_allowed_last'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_allowed_last_w }}, {{ circle_allowed_last_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-6">
+
+                                                <font style="vertical-align: inherit;">{{ circle_present_month }}
+                                                    (31)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_allowed_present"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_allowed_present_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_allowed_present'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_allowed_present_w }}, {{ circle_allowed_present_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-7">
+
+                        <font style="vertical-align: inherit;">Работоспособность</font>
+
+                    </h6>
+                    <div class="u-custom-color-8 u-radius-10 u-shape u-shape-round u-shape-1"></div>
+                </div>
+            </div>
+            <div class="u-align-left u-container-style u-expanded-width u-gradient u-group u-radius-30 u-shape-round u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-white u-text-3">
+
+                        <font style="vertical-align: inherit;">
+                            Работоспособность всех VPN-сервисов</font>
+
+                    </h4>
+                    <div class="u-list u-list-1">
+                        <div class="u-repeater u-repeater-1">
+
+
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-5">
+
+                                                <font style="vertical-align: inherit;">{{ circle_before_last_month }}
+                                                    (155)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_all_before_last"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_all_before_last_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_all_before_last'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_all_before_last_w }}, {{ circle_all_before_last_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-6">
+
+                                                <font style="vertical-align: inherit;">{{ circle_last_month }}
+                                                    (155)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_all_last"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_all_last_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_all_last'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_all_last_w }}, {{ circle_all_last_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="u-container-style u-list-item u-repeater-item">
+                                <div class="u-layout" style="">
+                                    <div class="u-layout-row" style="">
+                                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-3">
+                                            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-light-3 u-text-6">
+
+                                                <font style="vertical-align: inherit;">{{ circle_present_month }}
+                                                    (155)</font>
+
+                                                <br>
+                                            </h4>
+                                            <div>
+
+                                                <div style="width: 100%;">
+                                                    <canvas id="Circle_all_present"></canvas>
+
+                                                </div>
+                                                <div class="donut-inner">
+                                                    <h2>{{ circle_all_present_w }}%</h2>
+                                                </div>
+
+                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                                <script>
+                                                    new Chart(document.getElementById('Circle_all_present'), {
+                                                        type: 'doughnut',
+                                                        data: {
+                                                            labels: [
+                                                                'Работоспособность',
+                                                            ],
+                                                            datasets: [{
+                                                                data: [{{ circle_all_present_w }}, {{ circle_all_present_n }}],
+                                                                backgroundColor: [
+                                                                    'rgb(105,255,182)',
+                                                                    'rgb(245, 124, 115)',
+                                                                ],
+                                                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                                                borderWidth: 1,
+                                                                borderRadius: 20,
+
+                                                            }]
+                                                        },
+                                                        options: {
+                                                            radius: '90%',
+                                                            cutout: '87%',
+                                                            plugins: {
+                                                                legend: {
+                                                                    display: false,
+                                                                    position: 'bottom',
+                                                                },
+                                                            },
+
+                                                        },
+
+                                                    });
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-7">
+
+                        <font style="vertical-align: inherit;">Работоспособность</font>
+
+                    </h6>
+                    <div class="u-custom-color-8 u-radius-10 u-shape u-shape-round u-shape-1"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-gradient u-section-3" id="sec-1ab0">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
+                Работоспособность VPN-сервисов помесячно
+            </h1>
+            <div class="u-align-left u-container-style u-custom-color-14 u-expanded-width u-group u-radius-30 u-shape-round u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <div class="u-container-style u-layout-cell u-left-cell u-size-60 u-size-xs-60 u-layout-cell-1"
+                         src="">
+                        <div class="u-container-layout u-valign-bottom u-container-layout-1">
+                            <div>
+                                <div style="width: 100%;">
+                                    <canvas id="line"></canvas>
+                                </div>
+
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                <script>
+
+                                    const plugin = {
+                                        id: 'customCanvasBackgroundColor',
+                                        beforeDraw: (chart, args, options) => {
+                                            const {ctx} = chart;
+                                            ctx.save();
+                                            ctx.globalCompositeOperation = 'destination-over';
+                                            ctx.fillStyle = options.color || '#99ffff';
+                                            ctx.fillRect(0, 0, chart.width, chart.height);
+                                            ctx.restore();
+                                        }
+                                    };
+
+
+                                    new Chart(document.getElementById('line').getContext('2d'), {
+                                        type: 'line',
+                                        data: {
+                                            labels: [['Январь 2023'], ['Февраль 2023', '(заблок. VPN (55->95))'], ['Март 2023'], ['Апрель 2023'], ['Май 2023', '(заблок. VPN (95->124))'], ['Июнь 2023'], ['Июль 2023'], ['Август 2023'], ['Сентябрь 2023'], ['Октябрь 2023'], ['Ноябрь 2023'], ['Декабрь 2023'], ['Январь 2024'], ['Февраль 2024'], ['Март 2024'], ['Апрель 2024'], ],
+                                            datasets: [
+                                                {
+                                                    label: 'Заблокированные, %',
+                                                    data: {{ line_blocked }},
+                                                    backgroundColor: [
+                                                        'rgba(255, 99, 132, 1)',
+                                                    ],
+                                                    borderColor: [
+                                                        'rgb(219,84,90)',
+
+                                                    ],
+                                                    tension: 0.2,
+                                                    fill: false,
+                                                },
+                                                {
+                                                    label: 'Не заблокированные, %',
+                                                    data: {{ line_allowed }},
+                                                    backgroundColor: [
+                                                        'rgb(21,147,245)',
+
+                                                    ],
+                                                    borderColor: [
+                                                        'rgb(71,138,201)',
+
+                                                    ],
+                                                    tension: 0.2,
+                                                    fill: false,
+                                                },
+                                                {
+                                                    label: 'Все, %',
+                                                    data: {{ line_all }},
+                                                    backgroundColor: [
+                                                        'rgb(17,238,10)',
+                                                    ],
+                                                    borderColor: [
+                                                        'rgb(0,255,90)',
+
+                                                    ],
+                                                    tension: 0.2,
+                                                    fill: false,
+                                                },
+                                            ],
+
+                                        },
+                                        options: {
+                                            plugins: {
+                                                customCanvasBackgroundColor: {
+                                                    color: 'rgba(0,0,0,0)'
+                                                },
+                                                legend: {
+                                                    display: false,
+                                                    position: 'bottom',
+                                                },
+                                            }
+                                        },
+                                        plugins: [plugin],
+                                    });
+
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="u-custom-font u-font-montserrat u-text u-text-grey-50 u-text-2">
+                        Все, %
+                    </h6>
+                    <h6 class="u-custom-font u-font-montserrat u-text u-text-grey-50 u-text-3">
+                        Незаблокированные, %
+                    </h6>
+                    <h6 class="u-custom-font u-font-montserrat u-text u-text-grey-50 u-text-4">
+                        Заблокированные, %
+                    </h6>
+                    <div class="u-align-left u-palette-2-base u-radius-10 u-shape u-shape-round u-shape-1"></div>
+                    <div class="u-align-left u-palette-1-base u-radius-10 u-shape u-shape-round u-shape-2"></div>
+                    <div class="u-custom-color-11 u-radius-10 u-shape u-shape-round u-shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="u-clearfix u-gradient u-section-4" id="sec-ad20">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
+                <font style="vertical-align: inherit;"> Карта проведения
+                    тестирования</font>
+            </h1>
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-2">
+                Позволяет узнать результаты тестирования в выбранной точке на
+                карте
+            </h1>
+            <div class="u-container-style u-expanded-width u-gradient u-group u-radius-30 u-shape-round u-group-1">
+
+                <div class="{% plotly_class name='map' %} "
+                     style="height: 800px; width: 100%">
+                    <!-- style="height: 100%; width: 100%" -->
+                    {% plotly_app name='map' ratio=1 %}
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="u-clearfix u-gradient u-section-5" id="carousel_90e4">
+        <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
+            Интерактивный график
+        </h1>
+        <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-2">
+            График позволяет визуализировать результаты тестирования&nbsp;<br>по выбранным параметрам
+        </h1>
+        <div class="{% plotly_class name='dynamic_graph' %} "
+             style="height: 800px; width: 100%; margin-top: 30px">
+            <!-- style="height: 100%; width: 100%" -->
+            {% plotly_app name='dynamic_graph' ratio=1 %}
+        </div>
+    </section>
+
+
+
+
+    {#    <section class="u-clearfix u-gradient u-section-5" id="carousel_90e4">#}
+    {#        <div class="u-clearfix u-sheet u-sheet-1">#}
+    {#            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">#}
+    {#                Интерактивный график#}
+    {#            </h1>#}
+    {#            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-2">#}
+    {#                График позволяет визуализировать результаты#}
+    {#                тестирования&nbsp;<br>по выбранным параметрам#}
+    {#            </h1>#}
+    {##}
+    {#<div class="u-container-layout u-valign-bottom u-container-layout">#}
+    {#                <div class="{% plotly_class name='dynamic_graph' %} "#}
+    {#                     style="height: 800px; width: 100%">#}
+    {#                    <!-- style="height: 100%; width: 100%" -->#}
+    {#                    {% plotly_app name='dynamic_graph' ratio=1 %}#}
+    {#                </div>#}
+    {#</div>#}
+    {#        </div>#}
+    {#    </section>#}
+
+
+    <section class="u-clearfix u-gradient u-section-6" id="sec-2da0">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
+                Доступ к заблокированным ресурсам (Facebook и Instagram) без VPN-сервисов
+            </h1>
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-2">
+                Доступ к заблокированным ресурсам без VPN-сервисов (гистограммы Ганта, табличная форма, карта)
+            </h1>
+            <div class="u-align-left u-expanded-width u-tab-links-align-center u-tabs u-tabs-1">
+                <ul class="u-spacing-13 u-tab-list u-unstyled" role="tablist">
+                    <li class="u-tab-item" role="presentation">
+                        <a class="active u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-1"
+                           id="link-tab-a570" href="#tab-a570" role="tab"
+                           aria-controls="tab-a570" aria-selected="true">
+                                По всем операторам
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-2"
+                           id="link-tab-a82c" href="#tab-a82c" role="tab"
+                           aria-controls="tab-a82c" aria-selected="false">
+                                Теле2
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-3"
+                           id="link-tab-ad9c" href="#tab-megafon" role="tab"
+                           aria-controls="tab-ad9c" aria-selected="false">
+                                Мегафон
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-3"
+                           id="link-tab-ad9c" href="#tab-ad9c" role="tab"
+                           aria-controls="tab-ad9c" aria-selected="false">
+                                Билайн
+                        </a>
+                    </li>
+                    <li class="u-tab-item u-tab-item-4" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-4"
+                           id="link-tab-32c8" href="#tab-32c8" role="tab"
+                           aria-controls="tab-32c8" aria-selected="false">
+                                МТС
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-5"
+                           id="link-tab-64c3" href="#tab-64c3" role="tab"
+                           aria-controls="tab-64c3" aria-selected="false">
+                                Ростелеком (моб)
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-6"
+                           id="link-tab-4a89" href="#tab-4a89" role="tab"
+                           aria-controls="tab-4a89" aria-selected="false">
+                                Ростелеком
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-7"
+                           id="link-tab-1f77" href="#tab-1f77" role="tab"
+                           aria-controls="tab-1f77" aria-selected="false">
+                                МГТС
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-8"
+                           id="link-tab-c0b5" href="#tab-c0b5" role="tab"
+                           aria-controls="tab-c0b5" aria-selected="false">
+                                Табличная форма
+                        </a>
+                    </li>
+                </ul>
+                <div class="u-tab-content">
+                    <div class="u-container-style u-shape-rectangle u-tab-active u-tab-pane"
+                         id="tab-a570" role="tabpanel"
+                         aria-labelledby="link-tab-a570">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="{% plotly_class name='without_vpn' %} "
+                                 style="height: 100px; width: 100%">
+                                <!-- style="height: 100%; width: 100%" -->
+                                {% plotly_app name='without_vpn' ratio=1 %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-shape-rectangle u-tab-pane"
+                         id="tab-a82c" role="tabpanel"
+                         aria-labelledby="link-tab-a82c">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="{% plotly_class name='without_vpn_tele2' %} "
+                                 style="height: 100px; width: 100%">
+                                <!-- style="height: 100%; width: 100%" -->
+                                {% plotly_app name='without_vpn_tele2' ratio=1 %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-shape-rectangle u-tab-pane"
+                         id="tab-megafon" role="tabpanel"
+                         aria-labelledby="link-tab-megafon">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="{% plotly_class name='without_vpn_megafon' %} "
+                                 style="height: 100px; width: 100%">
+                                <!-- style="height: 100%; width: 100%" -->
+                                {% plotly_app name='without_vpn_megafon' ratio=1 %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-shape-rectangle u-tab-pane"
+                         id="tab-ad9c" role="tabpanel"
+                         aria-labelledby="link-tab-ad9c">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="{% plotly_class name='without_vpn_beeline' %} "
+                                 style="height: 100px; width: 100%">
+                                <!-- style="height: 100%; width: 100%" -->
+                                {% plotly_app name='without_vpn_beeline' ratio=1 %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-shape-rectangle u-tab-pane"
+                         id="tab-32c8" role="tabpanel"
+                         aria-labelledby="link-tab-32c8">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="{% plotly_class name='without_vpn_mts' %} "
+                                 style="height: 100px; width: 100%">
+                                <!-- style="height: 100%; width: 100%" -->
+                                {% plotly_app name='without_vpn_mts' ratio=1 %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-shape-rectangle u-tab-pane"
+                         id="tab-64c3" role="tabpanel"
+                         aria-labelledby="link-tab-64c3">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="{% plotly_class name='without_vpn_rostelecom_mobile' %} "
+                                 style="height: 100px; width: 100%">
+                                <!-- style="height: 100%; width: 100%" -->
+                                {% plotly_app name='without_vpn_rostelecom_mobile' ratio=1 %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-shape-rectangle u-tab-pane"
+                         id="tab-4a89" role="tabpanel"
+                         aria-labelledby="link-tab-4a89">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="{% plotly_class name='without_vpn_rostelecom' %} "
+                                 style="height: 100px; width: 100%">
+                                <!-- style="height: 100%; width: 100%" -->
+                                {% plotly_app name='without_vpn_rostelecom' ratio=1 %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-shape-rectangle u-tab-pane"
+                         id="tab-1f77" role="tabpanel"
+                         aria-labelledby="link-tab-1f77">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="{% plotly_class name='without_vpn_mgts' %} "
+                                 style="height: 100px; width: 100%">
+                                <!-- style="height: 100%; width: 100%" -->
+                                {% plotly_app name='without_vpn_mgts' ratio=1 %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-container-style u-shape-rectangle u-tab-pane"
+                         id="tab-c0b5" role="tabpanel"
+                         aria-labelledby="link-tab-c0b5">
+                        <div class="u-container-layout u-valign-middle u-container-layout-8">
+                            <div class="u-align-center u-expanded-width u-table u-table-responsive u-table-1">
+                                <table class="u-table-entity">
+                                    <colgroup>
+                                        <col width="6.5%">
+                                        <col width="15.5%">
+                                        <col width="11%">
+                                        <col width="11%">
+                                        <col width="11%">
+                                        <col width="11.2%">
+                                        <col width="11%">
+                                        <col width="11.8%">
+                                        <col width="11%">
+                                    </colgroup>
+                                    <thead class="u-align-center u-custom-color-16 u-custom-font u-font-montserrat u-table-header u-table-header-1">
+                                    <tr style="height: 70px;">
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-1">
+                                            № Точки
+                                        </th>
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-2">
+                                            Город
+                                        </th>
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-3">
+                                            Операцонная система
+                                        </th>
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-4">
+                                            Оператор
+                                        </th>
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-5">
+                                            Дата
+                                        </th>
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-6">
+                                            Facebook<br>web
+                                        </th>
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-7">
+                                            Facebook<br>app
+                                        </th>
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-8">
+                                            Instagram<br>web
+                                        </th>
+                                        <th class="u-border-1 u-border-palette-1-light-2 u-custom-color-16 u-table-cell u-table-cell-9">
+                                            Instagram<br>app
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="u-align-left u-custom-color-13 u-custom-font u-font-montserrat u-table-body u-text-custom-color-4 u-table-body-1">
+                                    <tr style="height: 42px;">
+                                        <td rowspan="28"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            1
+                                        </td>
+                                        <td rowspan="28"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-font-montserrat u-table-cell u-table-cell-11">
+                                            Москва
+                                        </td>
+                                        <td rowspan="28"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-font-montserrat u-table-cell u-table-cell-12">
+                                            Android
+                                        </td>
+                                        <td rowspan="19"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-font-montserrat u-table-cell u-table-cell-12">
+                                            Ростелеком<br>(мобильный)
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-font-montserrat u-table-cell u-text-custom-color-4 u-table-cell-14">
+                                            23.03.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            06.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            09.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            17.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            20.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            21.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            23.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            24.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            25.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            27.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            01.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            02.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            07.07.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            26.10.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            27.02.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            03.04.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            09.04.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            10.04.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            11.04.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+
+
+                                    <tr style="height: 42px;">
+                                        <td rowspan="3"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            МГТС
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            12.03.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            10.08.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            15.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="6"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Билайн
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            06.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            10.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            14.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            21.06.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            20.12.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            24.04.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+
+                                    <tr style="height: 42px;">
+                                        <td rowspan="5"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            2
+                                        </td>
+                                        <td rowspan="5"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Москва
+                                        </td>
+                                        <td rowspan="5"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            IOS
+                                        </td>
+                                        <td rowspan="5"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            МТС
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell u-table-cell-23">
+                                            03.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell u-table-cell-24">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell u-table-cell-25">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell u-table-cell-26"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell u-table-cell-27">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            12.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            16.10.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            01.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            13.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            3
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Москва
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            IOS
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            МГТС
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            15.02.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            4
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Москва
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Android
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            МТС
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            24.01.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="7"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            5
+                                        </td>
+                                        <td rowspan="7"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Москва
+                                        </td>
+                                        <td rowspan="7"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            IOS
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Билайн
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            27.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="5"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Теле2
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            06.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            14.12.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            20.12.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            29.02.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            30.03.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            МГТС
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            08.06.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                    </tr>
+
+                                    <tr style="height: 63px;">
+                                        <td rowspan="14" class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            6
+                                        </td>
+                                        <td  rowspan="14" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Москва
+                                        </td>
+                                        <td rowspan="14" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            IOS
+                                        </td>
+                                        <td rowspan="4" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Ростелеком<br>(мобильный)
+                                        </td>
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            22.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+
+
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            13.09.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            26.10.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            27.10.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="10"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            МТС
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            25.10.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            26.10.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            02.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            03.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            04.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            05.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            08.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            09.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            10.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            11.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="15"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            8
+                                        </td>
+                                        <td rowspan="15"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Щелково<br>(Московская область)
+                                        </td>
+                                        <td rowspan="15"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Android
+                                        </td>
+                                        <td rowspan="2"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Теле2
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            27.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            27.02.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="13"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            МТС
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            02.08.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            01.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            02.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            03.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            04.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            05.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            08.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            09.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            10.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            11.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                                                        <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            13.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            27.02.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            02.03.2024
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                    </tr>
+
+
+                                    <tr style="height: 42px;">
+                                        <td rowspan="7"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            9
+                                        </td>
+                                        <td rowspan="7"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Балашиха<br>(Московская область)
+                                        </td>
+                                        <td rowspan="7"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Android
+                                        </td>
+                                        <td rowspan="4"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            МТС
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            17.04.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            21.05.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            05.06.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            07.06.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="3"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Ростелеком<br>(Wi-Fi)
+                                        </td>
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            12.02.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            13.02.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 42px;">
+                                        <td rowspan="1"
+                                            class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            14.02.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            +
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 63px;">
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            10
+                                        </td>
+                                        <td  rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Балашиха<br>(Московская область)
+                                        </td>
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Android
+                                        </td>
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Мегафон
+                                        </td>
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            25.11.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+
+                                    </tr>
+                                    <tr style="height: 63px;">
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-custom-font u-first-column u-font-montserrat u-palette-1-light-3 u-table-cell u-text-custom-color-16 u-table-cell-10">
+                                            12
+                                        </td>
+                                        <td  rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Москва
+                                        </td>
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Android
+                                        </td>
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            Ростелеком<br>(Wi-Fi)
+                                        </td>
+                                        <td rowspan="1" class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">
+                                            13.09.2023
+                                        </td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell"></td>
+                                        <td class="u-align-center u-border-1 u-border-palette-1-light-2 u-table-cell">+</td>
+
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="u-clearfix u-custom-color-6 u-section-7" id="sec-238f">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
+                Карта доступности заблокированных&nbsp;<br>ресурсов без VPN
+            </h1>
+            <img class="custom-expanded u-align-center u-image u-image-round u-radius-30 u-image-1"
+                 src="{% static 'img/Frame16.png' %}" data-image-width="2580"
+                 data-image-height="2630">
+        </div>
+    </section>
+
+
+
+    <section class="u-clearfix u-gradient u-section-8" id="sec-c680-1">
+        <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+            <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
+                Отчеты и документы
+            </h1>
+            <h4 class="u-align-center u-custom-font u-font-montserrat u-text u-text-white u-text-2">
+                Cсылки на скачивание отчетных материалов и прочих документов
+            </h4>
+            <div class="u-expanded-width u-tab-links-align-center u-tabs u-tabs-1">
+                <ul class="u-spacing-13 u-tab-list u-unstyled" role="tablist">
+                    <li class="u-tab-item" role="presentation">
+                        <a class="active u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-1"
+                           id="link-tab-5c07" href="#tab-5c07" role="tab"
+                           aria-controls="tab-5c07" aria-selected="true">
+                            Документы
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-2"
+                           id="link-tab-55f8" href="#tab-55f8" role="tab"
+                           aria-controls="tab-55f8" aria-selected="false">
+                                Отчеты по всем VPN
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-3"
+                           id="link-tab-6fea" href="#tab-6fea" role="tab"
+                           aria-controls="tab-6fea" aria-selected="false">
+                                Отчеты по незаблокированным VPN
+                        </a>
+                    </li>
+                    <li class="u-tab-item" role="presentation">
+                        <a class="u-active-white u-button-style u-custom-color-7 u-custom-font u-font-montserrat u-radius-50 u-tab-link u-text-active-custom-color-4 u-text-white u-tab-link-4"
+                           id="link-tab-f859" href="#tab-f859" role="tab"
+                           aria-controls="tab-f859" aria-selected="false">
+                                Отчеты по заблокированным VPN
+                        </a>
+                    </li>
+                </ul>
+                <div class="u-tab-content">
+                    <div class="u-align-left u-container-style u-shape-rectangle u-tab-active u-tab-pane u-tab-pane-1"
+                         id="tab-5c07" role="tabpanel"
+                         aria-labelledby="link-tab-5c07">
+                        <div class="u-container-layout u-container-layout-1">
+                            <div class="u-list u-list-1">
+                                <div class="u-repeater u-repeater-1"></div>
+                            </div>
+                            <div class="u-expanded-width u-table u-table-responsive u-table-1">
+                                <table class="u-table-entity u-table-entity-1">
+                                    <colgroup>
+                                        <col width="50%">
+                                        <col width="50%">
+                                    </colgroup>
+                                    <thead class="u-black u-table-header u-table-header-1">
+                                    <tr style="height: 51px;">
+                                        <th class="u-align-center u-custom-color-16 u-custom-font u-font-montserrat u-table-cell u-table-cell-1">
+                                            Документ
+                                        </th>
+                                        <th class="u-align-center u-border-1 u-border-custom-color-16 u-custom-color-16 u-table-cell u-table-cell-2">
+                                            Ссылка на скачивание
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="u-align-left u-custom-color-15 u-custom-font u-font-montserrat u-table-body u-table-body-1">
+                                    <tr style="height: 109px;">
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-first-column u-table-cell u-table-cell-3">
+                                            Методика тестирования
+                                        </td>
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-4">
+                                            <span class="u-file-icon u-icon u-icon-1"
+                                                  data-href="{% url 'board:download_file' 'metodika.docx' %}"><img
+                                                    src="{% static 'img/Page_perspective_matte.svg' %}"
+                                                    alt=""></span>&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 109px;">
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-first-column u-table-cell u-table-cell-5">
+                                            Перечень заблокированных<br>VPN-сервисов
+                                        </td>
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-6">
+                                            <span class="u-file-icon u-icon u-icon-2"
+                                                  data-href="{% url 'board:download_file' 'perechen_zablokirovannykh_vpn.xlsx' %}"><img
+                                                    src="{% static 'img/Page_perspective_matte.svg' %}"
+                                                    alt=""></span>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 109px;">
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-first-column u-table-cell u-table-cell-7">
+                                            Перечень незаблокированных<br>VPN-сервисов
+                                        </td>
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-8">
+                                            <span class="u-file-icon u-icon u-icon-3"
+                                                  data-href="{% url 'board:download_file' 'perechen_nezablokirovannykh_vpn.xlsx' %}"><img
+                                                    src="{% static 'img/Page_perspective_matte.svg' %}"
+                                                    alt=""></span>
+                                        </td>
+                                    </tr>
+                                                                        <tr style="height: 109px;">
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-first-column u-table-cell u-table-cell-7">
+                                            Итоговый отчет за 2024 год<br>
+                                        </td>
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-8">
+                                            <span class="u-file-icon u-icon u-icon-3"
+                                                  data-href="{% url 'board:download_file' 'Otchet_vse_itog_24.docx' %}"><img
+                                                    src="{% static 'img/Page_perspective_matte.svg' %}"
+                                                    alt=""></span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-shape-rectangle u-tab-pane u-tab-pane-2"
+                         id="tab-55f8" role="tabpanel"
+                         aria-labelledby="link-tab-55f8">
+                        <div class="u-container-layout u-container-layout-2">
+                            <div class="u-expanded-width u-table u-table-responsive u-table-2">
+                                <table class="u-table-entity u-table-entity-2">
+                                    <colgroup>
+                                        <col width="33.3%">
+                                        <col width="33.3%">
+                                        <col width="33.400000000000006%">
+                                    </colgroup>
+                                    <thead class="u-black u-table-header u-table-header-2">
+                                    <tr style="height: 51px;">
+                                        <th class="u-align-center u-custom-color-16 u-custom-font u-font-montserrat u-table-cell u-table-cell-9">
+                                            Месяц
+                                        </th>
+                                        <th class="u-align-center u-border-1 u-border-custom-color-16 u-custom-color-16 u-table-cell u-table-cell-10">
+                                            Отчеты
+                                        </th>
+                                        <th class="u-align-center u-border-1 u-border-custom-color-4 u-custom-color-16 u-table-cell u-table-cell-11">
+                                            Графики
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="u-align-left u-custom-color-15 u-custom-font u-font-montserrat u-table-body u-table-body-2">
+
+
+                                    {% for month, name_month_for_download in month_for_table.items %}
+                                    <tr style="height: 109px;">
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-first-column u-table-cell u-table-cell-12">
+                                            {{ month }}
+                                        </td>
+                                        {% with 'Otchet_vse_'|add:name_month_for_download as file_name %}
+                                            {% with file_name|add:'.docx' as file_name %}
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-13">
+                                            <span class="u-file-icon u-icon u-icon-4"
+                                                  data-href="{% url 'board:download_file' file_name %}"><img
+                                                    src="{% static 'img/Page_perspective_matte.svg' %}"
+                                                    alt=""></span>&nbsp;
+                                        </td>
+                                                {% endwith %}
+                                        {% endwith %}
+                                        {% with 'Grafiki_vse_'|add:name_month_for_download as file_name %}
+                                            {% with file_name|add:'.docx' as file_name %}
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-14">
+                                            <span class="u-file-icon u-icon u-icon-5"
+                                                  data-href="{% url 'board:download_file' file_name %}"><img
+                                                    src="{% static 'img/Chart_perspective_matte.svg' %}"
+                                                    alt=""></span>
+                                        </td>
+                                            {% endwith %}
+                                        {% endwith %}
+                                    </tr>
+
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-shape-rectangle u-tab-pane u-tab-pane-3"
+                         id="tab-6fea" role="tabpanel"
+                         aria-labelledby="link-tab-6fea">
+                        <div class="u-container-layout u-container-layout-3">
+                            <div class="u-expanded-width u-table u-table-responsive u-table-3">
+                                <table class="u-table-entity u-table-entity-3">
+                                    <colgroup>
+                                        <col width="33.3%">
+                                        <col width="33.3%">
+                                        <col width="33.400000000000006%">
+                                    </colgroup>
+                                    <thead class="u-black u-table-header u-table-header-3">
+                                    <tr style="height: 51px;">
+                                        <th class="u-align-center u-custom-color-16 u-custom-font u-font-montserrat u-table-cell u-table-cell-27">
+                                            Месяц
+                                        </th>
+                                        <th class="u-align-center u-border-1 u-border-custom-color-16 u-custom-color-16 u-table-cell u-table-cell-28">
+                                            Отчеты
+                                        </th>
+                                        <th class="u-align-center u-border-1 u-border-custom-color-4 u-custom-color-16 u-table-cell u-table-cell-29">
+                                            Графики
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="u-align-left u-custom-color-15 u-custom-font u-font-montserrat u-table-body u-table-body-3">
+
+                                    {% for month, name_month_for_download in month_for_table_nezabl.items %}
+                                    <tr style="height: 109px;">
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-first-column u-table-cell u-table-cell-12">
+                                            {{ month }}
+                                        </td>
+                                        {% with 'Otchet_nezablokirovannyye_'|add:name_month_for_download as file_name %}
+                                            {% with file_name|add:'.docx' as file_name %}
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-13">
+                                            <span class="u-file-icon u-icon u-icon-4"
+                                                  data-href="{% url 'board:download_file' file_name %}"><img
+                                                    src="{% static 'img/Page_perspective_matte.svg' %}"
+                                                    alt=""></span>&nbsp;
+                                        </td>
+                                                {% endwith %}
+                                        {% endwith %}
+                                        {% with 'Grafiki_nezablokirovannyye_'|add:name_month_for_download as file_name %}
+                                            {% with file_name|add:'.docx' as file_name %}
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-14">
+                                            <span class="u-file-icon u-icon u-icon-5"
+                                                  data-href="{% url 'board:download_file' file_name %}"><img
+                                                    src="{% static 'img/Chart_perspective_matte.svg' %}"
+                                                    alt=""></span>
+                                        </td>
+                                            {% endwith %}
+                                        {% endwith %}
+                                    </tr>
+
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-align-left u-container-style u-shape-rectangle u-tab-pane u-tab-pane-4"
+                         id="tab-f859" role="tabpanel"
+                         aria-labelledby="link-tab-f859">
+                        <div class="u-container-layout u-container-layout-4">
+                            <div class="u-expanded-width u-table u-table-responsive u-table-4">
+                                <table class="u-table-entity u-table-entity-4">
+                                    <colgroup>
+                                        <col width="33.3%">
+                                        <col width="33.3%">
+                                        <col width="33.400000000000006%">
+                                    </colgroup>
+                                    <thead class="u-black u-table-header u-table-header-4">
+                                    <tr style="height: 51px;">
+                                        <th class="u-align-center u-custom-color-16 u-custom-font u-font-montserrat u-table-cell u-table-cell-45">
+                                            Месяц
+                                        </th>
+                                        <th class="u-align-center u-border-1 u-border-custom-color-16 u-custom-color-16 u-table-cell u-table-cell-46">
+                                            Отчеты
+                                        </th>
+                                        <th class="u-align-center u-border-1 u-border-custom-color-4 u-custom-color-16 u-table-cell u-table-cell-47">
+                                            Графики
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="u-align-left u-custom-color-15 u-custom-font u-font-montserrat u-table-body u-table-body-4">
+
+                                    {% for month, name_month_for_download in month_for_table.items %}
+                                    <tr style="height: 109px;">
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-first-column u-table-cell u-table-cell-12">
+                                            {{ month }}
+                                        </td>
+                                        {% with 'Otchet_zablokirovannyye_'|add:name_month_for_download as file_name %}
+                                            {% with file_name|add:'.docx' as file_name %}
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-13">
+                                            <span class="u-file-icon u-icon u-icon-4"
+                                                  data-href="{% url 'board:download_file' file_name %}"><img
+                                                    src="{% static 'img/Page_perspective_matte.svg' %}"
+                                                    alt=""></span>&nbsp;
+                                        </td>
+                                                {% endwith %}
+                                        {% endwith %}
+                                        {% with 'Grafiki_zablokirovannyye_'|add:name_month_for_download as file_name %}
+                                            {% with file_name|add:'.docx' as file_name %}
+                                        <td class="u-align-center u-border-2 u-border-custom-color-16 u-custom-color-15 u-table-cell u-table-cell-14">
+                                            <span class="u-file-icon u-icon u-icon-5"
+                                                  data-href="{% url 'board:download_file' file_name %}"><img
+                                                    src="{% static 'img/Chart_perspective_matte.svg' %}"
+                                                    alt=""></span>
+                                        </td>
+                                            {% endwith %}
+                                        {% endwith %}
+                                    </tr>
+
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include 'includes/footer.html' %}
+{% endblock content %}
+
+
+<!-- dynamic_graph -->

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;"><head>
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content=""><meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="np://app.desktop.nicepage.com/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="np://app.desktop.nicepage.com/nicepage.js" defer=""></script>
+<meta name="generator" content="Nicepage 5.11.2, nicepage.com"></head>
+<body class="u-body u-hide-header u-xl-mode" data-style="login-template-1" data-posts="" data-global-section-properties="{&quot;code&quot;:&quot;LOGIN&quot;,&quot;colorings&quot;:{&quot;light&quot;:[&quot;clean&quot;,&quot;clean&quot;],&quot;colored&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;],&quot;dark&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;]},&quot;isPreset&quot;:true}" data-source="fix" data-lang="ru" data-page-sections-style="[{&quot;name&quot;:&quot;login-form-1&quot;,&quot;margin&quot;:&quot;both&quot;,&quot;repeat&quot;:false}]" data-page-coloring-types="{&quot;light&quot;:[&quot;clean&quot;,&quot;clean&quot;],&quot;colored&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;],&quot;dark&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;]}" data-page-category="&quot;Login&quot;">
+<section class="u-align-center u-clearfix u-white u-block-c128-1" custom-posts-hash="T" data-section-properties="{&quot;margin&quot;:&quot;both&quot;,&quot;stretch&quot;:true}" data-id="c128" data-style="login-form-1" id="carousel_7138" data-source="functional_fix">
+  <div class="u-clearfix u-sheet u-block-c128-2">
+    <img class="u-image u-image-contain u-image-default u-block-c128-35" src="{% static 'img/07fbe760-717a-4e7e-91a1-bd1a3481120f.jpeg' %}" alt="" data-image-width="749" data-image-height="551"><div class="u-custom-color-6 u-form u-login-control u-radius-20 u-block-c128-24">
+{#      <form action="#" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 30px;" data-services="">#}
+
+          {% if form.errors %}
+              {% for field in form %}
+                {% for error in field.errors %}
+                  <div class="alert alert-danger">
+                    {{ error|escape }}
+                  </div>
+                {% endfor %}
+              {% endfor %}
+              {% for error in form.non_field_errors %}
+                <div class="alert alert-danger">
+                  {{ error|escape }}
+                </div>
+              {% endfor %}
+          {% endif %}
+      <form class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 30px;" method="post"
+            {% if action_url %}
+              action="{% url action_url %}"
+            {% endif %}
+          >
+          {% csrf_token %}
+
+{#          {% for field in form %}#}
+{##}
+{#              {% if field.field.required %}#}
+{#                aria-required="true"#}
+{#              {% else %}#}
+{#                aria-required="false"#}
+{#              {% endif %}#}
+{#            >#}
+{#              <label for="{{ field.id_for_label }}">#}
+{#                {{ field.label }}#}
+{#                  {% if field.field.required %}#}
+{#                    <span class="required text-danger">*</span>#}
+{#                  {% endif %}#}
+{#              </label>#}
+{#                {% if field.help_text %}#}
+{#                  <small id="{{ field.id_for_label }}-help" class="form-text text-muted">#}
+{#                    {{ field.help_text|safe }}#}
+{#                  </small>#}
+{#                {% endif %}#}
+{##}
+{##}
+{#          {% endfor %}#}
+          <div class="u-form-group u-form-name u-label-top u-block-c128-25">
+          <label for="username-a30d" class="u-label u-block-c128-26">Имя пользователя *</label>
+          <input type="text" placeholder="введите имя пользователя" id="id_username" name="username" class="u-input u-input-rectangle u-radius-20 u-block-c128-27" required="">
+        </div>
+        <div class="u-form-group u-form-password u-label-top u-block-c128-28">
+          <label for="password-a30d" class="u-label u-block-c128-29">Пароль *</label>
+          <input type="password" placeholder="введите пароль" id="id_password" name="password" class="u-input u-input-rectangle u-radius-20 u-block-c128-30" required="">
+        </div>
+        <div class="u-align-left u-form-group u-form-submit u-label-top u-block-c128-33">
+            <button type="submit" class="u-border-2 u-border-grey-75 u-btn u-btn-round u-btn-submit u-button-style u-palette-1-base u-radius-20 u-block-c128-34">
+                Войти
+            </button>
+{#          <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-round u-btn-submit u-button-style u-palette-1-base u-radius-20 u-block-c128-34">Войти</a>#}
+{#          <input type="submit" value="submit" class="u-form-control-hidden">#}
+        </div>
+        <input type="hidden" value="" name="recaptchaResponse">
+
+
+      </form>
+
+
+
+  </div>
+  <style data-mode="XL" data-visited="true">@media (min-width: 1200px) {
+  .u-block-c128-1 {
+    background-image: none;
+  }
+  .u-block-c128-2 {
+    min-height: 753px;
+  }
+  .u-block-c128-35 {
+    width: 160px;
+    height: 114px;
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .u-block-c128-24 {
+    height: 331px;
+    background-image: none;
+    width: 570px;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  .u-block-c128-27 {
+    background-image: none;
+  }
+  .u-block-c128-30 {
+    background-image: none;
+  }
+  .u-block-c128-34 {
+    width: 100%;
+    border-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}</style>
+  <style data-mode="LG" data-visited="true">@media (max-width: 1199px) and (min-width: 992px) {
+  .u-block-c128-1 {
+    background-image: none;
+  }
+  .u-block-c128-2 {
+    min-height: 823px;
+  }
+  .u-block-c128-35 {
+    width: 160px;
+    height: 114px;
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .u-block-c128-24 {
+    width: 570px;
+    margin-top: 33px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    background-image: none;
+    height: 331px;
+  }
+  .u-block-c128-27 {
+    background-image: none;
+  }
+  .u-block-c128-30 {
+    background-image: none;
+  }
+  .u-block-c128-34 {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-style: none;
+  }
+}</style>
+  <style data-mode="MD" data-visited="true">@media (max-width: 991px) and (min-width: 768px) {
+  .u-block-c128-1 {
+    background-image: none;
+  }
+  .u-block-c128-2 {
+    min-height: 823px;
+  }
+  .u-block-c128-35 {
+    width: 160px;
+    height: 114px;
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .u-block-c128-24 {
+    width: 570px;
+    margin-top: 33px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    background-image: none;
+    height: 331px;
+  }
+  .u-block-c128-27 {
+    background-image: none;
+  }
+  .u-block-c128-30 {
+    background-image: none;
+  }
+  .u-block-c128-34 {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-style: none;
+  }
+}</style>
+  <style data-mode="SM" data-visited="true">@media (max-width: 767px) and (min-width: 576px) {
+  .u-block-c128-1 {
+    background-image: none;
+  }
+  .u-block-c128-2 {
+    min-height: 863px;
+  }
+  .u-block-c128-35 {
+    width: 160px;
+    height: 114px;
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .u-block-c128-24 {
+    width: 540px;
+    margin-top: 33px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    background-image: none;
+    height: 331px;
+  }
+  .u-block-c128-27 {
+    background-image: none;
+  }
+  .u-block-c128-30 {
+    background-image: none;
+  }
+  .u-block-c128-34 {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-style: none;
+  }
+}</style>
+  <style data-mode="XS" data-visited="true">@media (max-width: 575px) {
+  .u-block-c128-1 {
+    background-image: none;
+  }
+  .u-block-c128-2 {
+    min-height: 868px;
+  }
+  .u-block-c128-35 {
+    width: 160px;
+    height: 114px;
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .u-block-c128-24 {
+    width: 340px;
+    margin-top: 33px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    background-image: none;
+    height: 331px;
+  }
+  .u-block-c128-27 {
+    background-image: none;
+  }
+  .u-block-c128-30 {
+    background-image: none;
+  }
+  .u-block-c128-34 {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-style: none;
+  }
+}</style>
+</section>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#	<title>Login V3</title>#}
+{#	<meta charset="UTF-8">#}
+{#        {% load static %}#}
+{#	<meta name="viewport" content="width=device-width, initial-scale=1">#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#    иконки#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'fonts/iconic/css/material-design-iconic-font.min.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">#}
+{#<!--===============================================================================================-->#}
+{#</head>#}
+{#<body>#}
+{##}
+{#	<div class="limiter">#}
+{#		<div class="container-login100" style="background-image: none">#}
+{#			<div class="wrap-login100">#}
+{#				<form class="login100-form validate-form">#}
+{#					<span class="login100-form-logo">#}
+{#						<i class="zmdi zmdi-landscape"></i>#}
+{#					</span>#}
+{##}
+{#					<span class="login100-form-title p-b-34 p-t-27">#}
+{#						Авторизация#}
+{#					</span>#}
+{##}
+{#					<div class="wrap-input100 validate-input" data-validate = "Enter username">#}
+{#						<input class="input100" id="{{ form.field.lo }}" type="text" name="username" placeholder="Имя пользователя">#}
+{#						<span class="focus-input100" data-placeholder="&#xf207;"></span>#}
+{#					</div>#}
+{##}
+{#					<div class="wrap-input100 validate-input" data-validate="Enter password">#}
+{#						<input class="input100" type="password" name="pass" placeholder="Пароль">#}
+{#						<span class="focus-input100" data-placeholder="&#xf191;"></span>#}
+{#					</div>#}
+{##}
+{##}
+{##}
+{#					<div class="container-login100-form-btn">#}
+{#						<button class="login100-form-btn">#}
+{#							Войти#}
+{#						</button>#}
+{#					</div>#}
+{##}
+{#				</form>#}
+{#			</div>#}
+{#		</div>#}
+{#	</div>#}
+{##}
+{##}
+{#	<div id="dropDownSelect1"></div>#}
+{##}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>#}
+{#	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>#}
+{#	<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'js/main.js' %}"></script>#}
+{##}
+{#</body>#}
+{#</html>#}
+
+
+
+
+{#{% extends "base.html" %}#}
+{#{% block title %}#}
+{#  Войти#}
+{#{% endblock %}#}
+{#{% block content %}#}
+{#{% load static %}#}
+{#    <!-- Bootstrap CSS -->#}
+{#  <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">#}
+{#    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">#}
+{#  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css">#}
+{#  <div class="row justify-content-center">#}
+{#    <div class="col-md-8 p-5">#}
+{#      <div class="card">#}
+{#        <div class="card-header">#}
+{#          Войти на сайт#}
+{#        </div>#}
+{#        <div class="card-body">#}
+{#          {% if form.errors %}#}
+{#              {% for field in form %}#}
+{#                {% for error in field.errors %}#}
+{#                  <div class="alert alert-danger">#}
+{#                    {{ error|escape }}#}
+{#                  </div>#}
+{#                {% endfor %}#}
+{#              {% endfor %}#}
+{#              {% for error in form.non_field_errors %}#}
+{#                <div class="alert alert-danger">#}
+{#                  {{ error|escape }}#}
+{#                </div>#}
+{#              {% endfor %}#}
+{#          {% endif %}#}
+{##}
+{#          <form method="post"#}
+{#            {% if action_url %}#}
+{#              action="{% url action_url %}"#}
+{#            {% endif %}#}
+{#          >#}
+{#          {% csrf_token %}#}
+{##}
+{#          {% for field in form %}#}
+{#            <div class="form-group row my-3"#}
+{#              {% if field.field.required %}#}
+{#                aria-required="true"#}
+{#              {% else %}#}
+{#                aria-required="false"#}
+{#              {% endif %}#}
+{#            >#}
+{#              <label for="{{ field.id_for_label }}">#}
+{#                {{ field.label }}#}
+{#                  {% if field.field.required %}#}
+{#                    <span class="required text-danger">*</span>#}
+{#                  {% endif %}#}
+{#              </label>#}
+{#              <div>#}
+{#              {{ field}}#}
+{#                {% if field.help_text %}#}
+{#                  <small id="{{ field.id_for_label }}-help" class="form-text text-muted">#}
+{#                    {{ field.help_text|safe }}#}
+{#                  </small>#}
+{#                {% endif %}#}
+{#              </div>#}
+{#            </div>#}
+{#          {% endfor %}#}
+{#          <div class="col-md-6 offset-md-4">#}
+{#            <button type="submit" class="btn btn-primary">#}
+{#              Войти#}
+{#            </button>#}
+{#            <!-- Тест на внимательность. Без переопределения шаблона этого адреса#}
+{#            не существует. Нужно что-то делать, иначе все упадет -->#}
+{#            <a href="{% url 'users:password_reset_form' %}" class="btn btn-link">#}
+{#              Забыли пароль?#}
+{#            </a>#}
+{#          </div>#}
+{#          </form>#}
+{#        </div> <!-- card body -->#}
+{#      </div> <!-- card -->#}
+{#    </div> <!-- col -->#}
+{#</div> <!-- row -->#}
+{#{% endblock %}#}
+
+
+

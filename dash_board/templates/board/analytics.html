@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Аналитика
+{% endblock title %}
+
+{% block content %}
+    {% load static %}
+    {% load plotly_dash %}
+    {% include 'includes/header.html' %}
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Site1",
+        "logo": "images/logo.png"
+    }</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Аналитика">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+    <style>
+        .donut-inner {
+            margin-top: -61%;
+            margin-bottom: 50%;
+            margin-left: 110px;
+
+        }
+
+        .donut-inner h2 {
+            margin-bottom: 1px;
+            margin-top: 0;
+            font-family: "Montserrat";
+            color: white;
+        }
+    </style>
+    </head>
+
+
+{#        <section class="u-clearfix u-gradient u-section-5" id="carousel_90e4">#}
+{#        <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">#}
+{#            Интерактивный график#}
+{#        </h1>#}
+{#        <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-2">#}
+{#            График позволяет визуализировать результаты тестирования&nbsp;<br>по выбранным параметрам#}
+{#        </h1>#}
+{#        <div class="{% plotly_class name='dynamic_graph_table' %} "#}
+{#             style="height: auto; width: 100%; margin-top: 30px">#}
+{#            <!-- style="height: 100%; width: 100%" -->#}
+{#            {% plotly_app name='dynamic_graph_table' ratio=1 %}#}
+{#        </div>#}
+{#    </section>#}
+
+
+
+    <section class="u-clearfix u-custom-color-1 u-section-9" id="carousel_90e4">
+
+        <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">
+            Сравнение результатов <br>ручного и автоматического тестирования
+        </h1>
+        <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-1-light-2 u-text-2">
+График позволяет визуализировать результаты тестирования&nbsp;<br>по выбранным параметрам
+        </h1>
+          <div class="{% plotly_class name='dynamic_graph_table' %} "
+             style="height: auto; width: 100%; margin-top: 30px">
+            <!-- style="height: 100%; width: 100%" -->
+            {% plotly_app name='dynamic_graph_table' ratio=1 %}
+        </div>
+
+    </section>
+
+
+
+
+
+
+    {% include 'includes/footer.html' %}
+{% endblock content %}
+
+
+<!-- dynamic_graph -->

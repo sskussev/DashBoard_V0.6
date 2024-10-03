@@ -102,7 +102,7 @@ DATABASES = {
         'USER': 'admin', # os.getenv("DB_USER"),
         'PASSWORD': 'fyhni3-ridpor-Cubvoq', # os.getenv("DB_PASSWORD"),
         'HOST': 'localhost', # os.getenv("DB_HOST"),
-        'PORT': '5432' # os.getenv("DB_PORT")  # '5432',
+        'PORT': '' # os.getenv("DB_PORT")  # '5432',
     }
 }
 
